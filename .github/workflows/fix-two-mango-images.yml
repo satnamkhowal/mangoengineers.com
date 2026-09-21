@@ -1,0 +1,51 @@
+name: QA fix two Mango Engineers course images
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-two-mango-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mango-final-image-qa
+  cancel-in-progress: true
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore the two originals from pre-image commit
+        run: |
+          git checkout baf722b1ef980ed9dc9efcfae48cf7b5d2559da7 -- "assests/Mango engineers images/jdbc-course-jaipur-mango-engineers.webp"
+          git checkout baf722b1ef980ed9dc9efcfae48cf7b5d2559da7 -- "assests/Mango engineers images/spring-mvc-course-jaipur-mango-engineers.webp"
+
+      - name: Install image dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-dejavu-core fonts-liberation
+          python -m pip install --upgrade pip
+          python -m pip install pillow numpy
+
+      - name: Apply targeted phone replacement
+        run: python .github/scripts/fix_two_mango_images.py
+
+      - name: Commit QA-corrected images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "assests/Mango engineers images/jdbc-course-jaipur-mango-engineers.webp"
+          git add "assests/Mango engineers images/spring-mvc-course-jaipur-mango-engineers.webp"
+          git add "assests/Mango engineers images/jpg/jdbc-course-jaipur-mango-engineers.jpg"
+          git add "assests/Mango engineers images/jpg/spring-mvc-course-jaipur-mango-engineers.jpg"
+          git commit -m "Fix phone number area on JDBC and Spring MVC images"
+          git pull --rebase origin main
+          git push origin main
