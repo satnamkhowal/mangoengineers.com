@@ -62,3 +62,43 @@ Shared integration completed:
 - A GitHub Actions run was triggered and was queued when checked.
 
 No production deployment/live claim was made.
+
+
+## 2026-09-22 — SEO competitor research cycle 001
+
+Scope:
+- verified Mango Engineers business positioning against repository truth before research
+- analyzed Java, Java Full Stack, Full Stack Development, React, Node.js, Data Analytics, Power BI, DevOps and AWS/Linux support paths
+- reviewed current SERP/live evidence and representative competitors: Forsk Coding School, Training Jaipur, DAAC, GRRAS, IIHT Jaipur and Samyak
+
+Key findings:
+- no industrial automation/PLC service pages are justified from current verified business evidence; current positioning remains technology/programming training in Jaipur
+- strongest commercial course intents already have repository pages, so this cycle recommends improvement rather than duplicate page creation
+- current live WordPress URLs and repository .html/PHP URLs remain unresolved
+- Node.js currently surfaces on the semantically wrong live slug /courses/email-marketing-course-jaipur-2/; additional Data/AI course pages also use legacy email-marketing-course-jaipur-X slugs
+- current live Java Full Stack output includes legacy/title contamination referencing another academy name
+- local NAP is inconsistent across repository/live history: repository lists Tonk Phatak + Shri Kishanpura; current live search output emphasizes Shyam Nagar; older live course content contains Mansarovar contact details
+- DevOps competitors expose materially deeper tool/lab progression; Mango should strengthen its existing DevOps page rather than generate thin tool pages
+- Google Search Central site-move guidance supports an explicit old→new URL mapping, relevant redirects, self-referencing destination canonicals and updated internal links before migration
+
+Research files added:
+- docs/seo-research/competitor-matrix.md
+- docs/seo-research/keyword-clusters.csv
+- docs/seo-research/content-gaps.md
+- docs/seo-research/local-seo-opportunities.md
+- docs/seo-research/internal-link-plan.md
+- docs/seo-research/seo-roadmap.md
+
+Implementation tasks added:
+- ME-SEO-COURSE-001
+- ME-SEO-DATA-001
+- ME-SEO-DEVOPS-001
+- ME-LOCAL-NAP-001
+- ME-SEO-CONTENT-001
+
+Existing ME-SEO-URL-001 was enriched to explicitly include semantically wrong live course slugs.
+
+Status:
+- research/documentation IMPLEMENTED on branch seo/research-cycle-001
+- task moved to REVIEW; coordinator should review/merge
+- no production deployment or live-site change claimed
