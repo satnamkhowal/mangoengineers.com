@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - refactor/php-common-layout
+      - refactor/php-page-bodies
   pull_request:
     branches:
       - main
@@ -31,43 +32,44 @@ jobs:
         run: |
           find . -maxdepth 2 -type f -name '*.php' -print0 | sort -z | xargs -0 -n1 php -l
 
-      - name: Verify every root HTML page has a PHP counterpart
+      - name: Verify full PHP conversion
         run: |
-          failed=0
-          for html in ./*.html; do
-            php_file="${html%.html}.php"
-            if [ ! -f "$php_file" ]; then
-              echo "Missing PHP counterpart: $php_file"
-              failed=1
-            fi
-          done
-          exit "$failed"
+          if find . -maxdepth 1 -type f -name '*.html' -print -quit | grep -q .; then
+            echo "Root HTML source files still exist."
+            find . -maxdepth 1 -type f -name '*.html' -print
+            exit 1
+          fi
 
-      - name: Verify metadata coverage
-        run: |
           php -r '
             require "includes/site-config.php";
             require "includes/page-config.php";
             $defs = mango_page_definitions();
-            $redirected = ["blog", "index-one"];
             $missing = [];
-            foreach (glob("*.html") as $file) {
-                $key = basename($file, ".html");
-                if (in_array($key, $redirected, true)) {
-                    continue;
+            foreach (array_keys($defs) as $key) {
+                if (!is_file($key . ".php")) {
+                    $missing[] = $key . ".php";
                 }
-                if (!isset($defs[$key])) {
-                    $missing[] = $key;
+                if (!is_file("pages/" . $key . ".php")) {
+                    $missing[] = "pages/" . $key . ".php";
+                }
+            }
+            foreach (["blog", "index-one"] as $redirectKey) {
+                if (!is_file($redirectKey . ".php")) {
+                    $missing[] = $redirectKey . ".php";
                 }
             }
             if ($missing) {
-                fwrite(STDERR, "Missing metadata: " . implode(", ", $missing) . PHP_EOL);
+                fwrite(STDERR, "Missing PHP files: " . implode(", ", $missing) . PHP_EOL);
                 exit(1);
             }
-            echo "Metadata coverage OK: " . count($defs) . " configured pages" . PHP_EOL;
+            if (count($defs) !== 64) {
+                fwrite(STDERR, "Unexpected page metadata count: " . count($defs) . PHP_EOL);
+                exit(1);
+            }
+            echo "Full PHP conversion verified for " . count($defs) . " configured pages plus 2 redirects." . PHP_EOL;
           '
 
-      - name: Verify shared includes
+      - name: Verify shared includes and rewrites
         run: |
           test -f includes/head.php
           test -f includes/header.php
