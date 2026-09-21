@@ -23,3 +23,22 @@ Checks performed:
 - lead-form branch pre-review while still IN_PROGRESS
 
 Production status was not assumed from repository merges.
+
+
+## 2026-09-22 — Header logo sizing fix
+
+User-reported issue: oversized Mango Engineers logo was expanding/disturbing the shared header.
+
+Implemented on `main`:
+- Added `assets/css/mango-overrides.css` with scoped responsive logo constraints for header-style-7.
+- Desktop logo capped at 210px wide / 56px high.
+- Tablet logo capped at 190px / 50px.
+- Mobile header logo capped at 160px / 42px and popup logo at 175px / 42px.
+- Loaded the override stylesheet after `assets/css/app.css` from `includes/head.php`.
+- Existing vendor/theme CSS was left untouched.
+
+Commits:
+- `8ac90081874adbb432ed4386b85f8de0ccdb6148` — responsive header logo sizing override.
+- `426987b32009813a45b8c6e22abf6bdc2269adb6` — load override stylesheet.
+
+Status: IMPLEMENTED/MERGED on main. Production deployment/live verification not assumed.
