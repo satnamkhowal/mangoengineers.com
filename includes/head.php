@@ -41,6 +41,7 @@ $schema = mango_page_schema($page);
     <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/vendor/tipped.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/mango-overrides.css">
 
     <script type="application/ld+json"><?= json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP) ?></script>
 </head>
