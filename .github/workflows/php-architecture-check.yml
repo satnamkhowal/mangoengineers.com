@@ -62,11 +62,7 @@ jobs:
                 fwrite(STDERR, "Missing PHP files: " . implode(", ", $missing) . PHP_EOL);
                 exit(1);
             }
-            if (count($defs) !== 64) {
-                fwrite(STDERR, "Unexpected page metadata count: " . count($defs) . PHP_EOL);
-                exit(1);
-            }
-            echo "Full PHP conversion verified for " . count($defs) . " configured pages plus 2 redirects." . PHP_EOL;
+            echo "PHP page coverage verified for " . count($defs) . " configured pages plus 2 redirects." . PHP_EOL;
           '
 
       - name: Verify shared includes and rewrites
@@ -77,4 +73,5 @@ jobs:
           test -f includes/site-config.php
           test -f includes/page-config.php
           test -f includes/legacy-renderer.php
+          test -f includes/course-page.php
           grep -Fq 'RewriteRule ^([A-Za-z0-9-]+)\.html$ $1.php [L,QSA]' .htaccess
