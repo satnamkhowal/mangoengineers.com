@@ -23,10 +23,13 @@ $site = mango_site();
                             <li class="has-droupdown">
                                 <a href="course-one.html">Courses</a>
                                 <ul class="submenu">
-                                    <li><a href="course-one.html">All Courses</a></li>
-                                    <li><a href="index-programming.html">Programming</a></li>
-                                    <li><a href="index-digital-marketing.html">Digital Marketing</a></li>
-                                    <li><a href="index-online-academy.html">Online Learning</a></li>
+                                    <li><a href="course-one.html#programming">Programming</a></li>
+                                    <li><a href="course-one.html#full-stack">Full Stack</a></li>
+                                    <li><a href="course-one.html#data-ai">Data & AI</a></li>
+                                    <li><a href="course-one.html#cloud-devops">Cloud & DevOps</a></li>
+                                    <li><a href="course-one.html#security-design-marketing">Cyber, Design & Marketing</a></li>
+                                    <li><a href="course-one.html#career-programs">Career Programs</a></li>
+                                    <li><a href="course-one.html#internships">Internships</a></li>
                                 </ul>
                             </li>
                             <li><a href="about-one.html">About</a></li>
@@ -41,12 +44,10 @@ $site = mango_site();
                 <div class="header-right">
                     <ul class="header-action">
                         <li class="header-btn">
-                            <a href="contact-us.html" class="edu-btn btn-medium">Enquire Now <i class="icon-4"></i></a>
+                            <a href="contact-us.html" class="edu-btn btn-medium">Free Counselling <i class="icon-4"></i></a>
                         </li>
                         <li class="mobile-menu-bar d-block d-xl-none">
-                            <button class="hamberger-button" aria-label="Open menu">
-                                <i class="icon-54"></i>
-                            </button>
+                            <button class="hamberger-button" aria-label="Open menu"><i class="icon-54"></i></button>
                         </li>
                     </ul>
                 </div>
@@ -72,10 +73,12 @@ $site = mango_site();
                 <li class="has-droupdown">
                     <a href="course-one.html">Courses</a>
                     <ul class="submenu">
-                        <li><a href="course-one.html">All Courses</a></li>
-                        <li><a href="index-programming.html">Programming</a></li>
-                        <li><a href="index-digital-marketing.html">Digital Marketing</a></li>
-                        <li><a href="index-online-academy.html">Online Learning</a></li>
+                        <li><a href="course-one.html#programming">Programming</a></li>
+                        <li><a href="course-one.html#full-stack">Full Stack</a></li>
+                        <li><a href="course-one.html#data-ai">Data & AI</a></li>
+                        <li><a href="course-one.html#cloud-devops">Cloud & DevOps</a></li>
+                        <li><a href="course-one.html#career-programs">Career Programs</a></li>
+                        <li><a href="course-one.html#internships">Internships</a></li>
                     </ul>
                 </li>
                 <li><a href="about-one.html">About</a></li>
@@ -84,11 +87,8 @@ $site = mango_site();
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact-us.html">Contact</a></li>
             </ul>
-
             <div class="mt--30">
-                <a href="tel:<?= mango_e($site['phone_href']) ?>" class="edu-btn btn-medium">
-                    Call <?= mango_e($site['phone_display']) ?>
-                </a>
+                <a href="tel:<?= mango_e($site['phone_href']) ?>" class="edu-btn btn-medium">Call <?= mango_e($site['phone_display']) ?></a>
             </div>
         </div>
     </div>
