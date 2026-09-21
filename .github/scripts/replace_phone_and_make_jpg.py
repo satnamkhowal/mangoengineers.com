@@ -101,7 +101,14 @@ def find_number_bbox(img: Image.Image):
                     pos = next_pos
                 if chosen:
                     x, y, w, h = union_box(chosen)
-                    return tuple(int(round(v / scale)) for v in (x, y, w, h))
+                    x, y, w, h = tuple(int(round(v / scale)) for v in (x, y, w, h))
+                    # OCR can occasionally merge unrelated numeric fragments on the same line.
+                    # The phone number area on these course cards is much narrower, so clamp
+                    # suspiciously wide boxes before painting over the footer.
+                    max_reasonable_w = int(img.width / scale * 0.22)
+                    if w > max_reasonable_w:
+                        w = max_reasonable_w
+                    return (x, y, w, h)
 
     return None
 
