@@ -1,8 +1,73 @@
 /* Mango Engineers theme-safe overrides.
    Keep component-level fixes here so vendor/theme CSS remains upgradeable. */
 
+/* --------------------------------------------------------------------------
+   Global responsive safety
+   -------------------------------------------------------------------------- */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#main-wrapper {
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+}
+
+@supports (overflow: clip) {
+    #main-wrapper {
+        overflow-x: clip;
+    }
+}
+
+img,
+video,
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.row > [class*="col"],
+.header-navbar,
+.header-brand,
+.header-mainnav,
+.header-right,
+.header-action {
+    min-width: 0;
+}
+
+.main-wrapper .title,
+.main-wrapper .description,
+.main-wrapper p,
+.main-wrapper li,
+.main-wrapper .information-list a {
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.edu-btn {
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Shared header / logo sizing
+   -------------------------------------------------------------------------- */
+
 .edu-header.header-style-7 .header-brand .logo {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     margin-right: 28px;
 }
 
@@ -20,6 +85,47 @@
     object-fit: contain;
 }
 
+.edu-header.header-style-7 .header-navbar {
+    gap: 12px;
+}
+
+.edu-header.header-style-7 .header-right {
+    flex: 0 0 auto;
+}
+
+.edu-header.header-style-7 .header-action {
+    align-items: center;
+}
+
+/* Laptop widths need slightly denser navigation without changing the theme. */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .edu-header.header-style-7 .header-mainmenu {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo {
+        margin-right: 18px;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo a img {
+        max-width: 172px;
+        max-height: 46px;
+    }
+
+    .edu-header.header-style-7 .mainmenu-nav .mainmenu > li > a {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    .edu-header.header-style-7 .header-action .header-btn a {
+        padding-left: 16px;
+        padding-right: 16px;
+        white-space: nowrap;
+    }
+}
+
 @media only screen and (max-width: 1350px) {
     .edu-header.header-style-7 .header-brand .logo {
         margin-right: 20px;
@@ -31,7 +137,69 @@
     }
 }
 
+/* Tablet / iPad header. */
+@media only screen and (max-width: 1199px) {
+    .edu-header.header-style-7 .header-mainmenu {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        line-height: normal;
+    }
+
+    .edu-header.header-style-7 .header-navbar {
+        min-height: 78px;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo {
+        margin-right: 0;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo a img {
+        max-width: 182px;
+        max-height: 48px;
+    }
+
+    .header-action .mobile-menu-bar .hamberger-button,
+    .popup-mobile-menu .inner .header-top .close-menu .close-button {
+        width: 44px;
+        height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .popup-mobile-menu .inner {
+        width: min(360px, 100vw);
+        max-width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    .popup-mobile-menu .mainmenu li a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .popup-mobile-menu .mainmenu .submenu li a {
+        min-height: 40px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
+    .edu-header.header-style-7 .header-mainmenu {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .edu-header.header-style-7 .header-navbar {
+        min-height: 70px;
+        gap: 8px;
+    }
+
     .edu-header.header-style-7 .header-brand .logo {
         margin-right: 12px;
     }
@@ -41,11 +209,294 @@
         max-height: 42px;
     }
 
+    .popup-mobile-menu .inner .header-top {
+        padding: 12px 15px;
+    }
+
     .popup-mobile-menu .inner .header-top .logo a img {
         width: auto;
         height: auto;
-        max-width: 175px;
-        max-height: 42px;
+        max-width: 165px;
+        max-height: 40px;
         object-fit: contain;
+    }
+
+    .popup-mobile-menu .mainmenu {
+        padding: 12px 18px 24px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .edu-header.header-style-7 .header-navbar {
+        min-height: 66px;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo a img {
+        max-width: 142px;
+        max-height: 38px;
+    }
+
+    .popup-mobile-menu .inner .header-top .logo a img {
+        max-width: 150px;
+        max-height: 38px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Hero, buttons and above-the-fold content
+   -------------------------------------------------------------------------- */
+
+.hero-banner .banner-btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-banner .banner-btn .edu-btn {
+    margin-left: 0 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-style-15.programming-banner {
+        min-height: auto;
+        padding: 72px 0 64px;
+    }
+
+    .hero-style-15.programming-banner .banner-content {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .hero-style-15.programming-banner .banner-content .title {
+        font-size: clamp(38px, 6vw, 54px);
+        line-height: 1.15;
+    }
+
+    .hero-style-15.programming-banner .banner-content > p {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-style-15.programming-banner .banner-content .banner-btn {
+        justify-content: center;
+    }
+
+    .hero-style-15.programming-banner .banner-content .programming-feature-area {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        width: 100%;
+        padding-top: 34px;
+        margin-bottom: 0;
+    }
+
+    .hero-style-15.programming-banner .banner-content .programming-feature-area .feature-course,
+    .hero-style-15.programming-banner .banner-content .programming-feature-area .feature-instructior {
+        justify-content: center;
+        min-width: 0;
+    }
+
+    .hero-style-15.programming-banner .banner-thumbnail {
+        margin-top: 34px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-style-15.programming-banner {
+        padding: 56px 0 50px;
+    }
+
+    .hero-style-15.programming-banner .banner-content .title {
+        font-size: clamp(34px, 9vw, 44px);
+    }
+
+    .hero-style-15.programming-banner .banner-content .programming-feature-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .hero-style-15.programming-banner .banner-content .programming-feature-area .feature-course,
+    .hero-style-15.programming-banner .banner-content .programming-feature-area .feature-instructior {
+        justify-content: flex-start;
+        text-align: left;
+        max-width: 340px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .hero-banner .banner-btn {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .hero-banner .banner-btn .edu-btn {
+        width: 100%;
+    }
+
+    .hero-style-15.programming-banner {
+        padding-top: 46px;
+    }
+
+    .hero-style-15.programming-banner .banner-content .pre-title {
+        line-height: 1.5;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Cards, images and content grids
+   -------------------------------------------------------------------------- */
+
+.edu-course .thumbnail img,
+.edu-blog .thumbnail img,
+.about-image-gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1199px) {
+    .features-area-7 .features-grid-wrap-2 .features-box {
+        padding: 38px 34px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .features-area-7 .features-grid-wrap-2 {
+        gap: 20px;
+    }
+
+    .features-area-7 .features-grid-wrap-2 .features-box {
+        padding: 28px 24px;
+    }
+
+    .features-area-7 .features-grid-wrap-2 .features-box .content p {
+        margin-bottom: 28px;
+    }
+
+    .section-title .title,
+    .edu-breadcrumb-area .page-title .title {
+        overflow-wrap: anywhere;
+    }
+
+    .edu-breadcrumb-area .edu-breadcrumb {
+        flex-wrap: wrap;
+        row-gap: 6px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .features-area-7 .features-grid-wrap-2 .features-box {
+        padding: 24px 20px;
+    }
+
+    .edu-course-area .course-style-17 .thumbnail {
+        padding: 18px;
+    }
+
+    .edu-course-area .course-style-17 .content {
+        margin-top: -102px;
+        padding: 110px 18px 18px;
+    }
+
+    .edu-course-area .course-style-17 .content .title {
+        overflow-wrap: anywhere;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Forms, tables, embeds and long content
+   -------------------------------------------------------------------------- */
+
+.entry-content,
+.course-details-content,
+.privacy-policy,
+.event-details .details-content {
+    min-width: 0;
+}
+
+.entry-content table,
+.course-details-content table,
+.privacy-policy table,
+.event-details .details-content table {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.entry-content iframe,
+.course-details-content iframe,
+.event-details iframe,
+.contact-form iframe {
+    width: 100%;
+}
+
+@media only screen and (max-width: 575px) {
+    .contact-form .edu-btn,
+    .contact-form button[type="submit"],
+    .cta-area-1 .edu-btn {
+        width: 100%;
+    }
+
+    input:not([type="checkbox"]):not([type="radio"]),
+    select,
+    textarea {
+        font-size: 16px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Footer and very small screens
+   -------------------------------------------------------------------------- */
+
+.edu-footer .information-list a {
+    word-break: break-word;
+}
+
+@media only screen and (max-width: 575px) {
+    .edu-footer .edu-footer-widget {
+        margin-bottom: 8px;
+    }
+
+    .edu-footer .social-share {
+        flex-wrap: wrap;
+    }
+
+    .copyright-area p {
+        line-height: 1.6;
+    }
+}
+
+/* iPhone SE / compact Android widths. */
+@media only screen and (max-width: 374px) {
+    .container,
+    .container-fluid,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .edu-header.header-style-7 .header-mainmenu {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo a img {
+        max-width: 132px;
+    }
+
+    .hero-style-15.programming-banner .banner-content .title {
+        font-size: 32px;
     }
 }

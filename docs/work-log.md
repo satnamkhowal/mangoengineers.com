@@ -62,3 +62,33 @@ Shared integration completed:
 - A GitHub Actions run was triggered and was queued when checked.
 
 No production deployment/live claim was made.
+
+## 2026-09-22 — Cross-device responsive pass
+
+Scope: shared responsive behavior for phone, iPhone, iPad/tablet, laptop and desktop widths while preserving the existing EduBlink/Mango Engineers theme.
+
+Implemented:
+- Expanded `assets/css/mango-overrides.css` as the single theme-safe responsive override layer; vendor/theme CSS remains untouched.
+- Added overflow/media safeguards for long content, images, embeds, forms and content columns.
+- Added laptop-specific header compaction for 1200–1399px so the logo, navigation and counselling CTA fit more reliably.
+- Added tablet/iPad header sizing, 44px touch targets and a viewport-safe mobile navigation drawer.
+- Added iPhone/mobile header and logo sizing down through compact <=374px widths.
+- Reworked the programming homepage hero at <=991px to remove the desktop min-height dependency, improve heading scaling, stack/wrap CTAs and make feature items responsive.
+- Reduced oversized feature-card padding at tablet/mobile widths.
+- Tightened course card spacing on small phones.
+- Added horizontally scrollable content tables, responsive embeds and 16px mobile form controls to avoid iOS input zoom.
+- Added small-screen footer wrapping safeguards.
+
+Representative repository checks:
+- Shared stylesheet is loaded globally after `assets/css/app.css` from `includes/head.php`.
+- Header selectors verified against `includes/header.php`.
+- Homepage hero/course selectors verified against `pages/index.php`.
+- Course, breadcrumb, content-grid and form structures cross-checked on representative page bodies.
+- CSS brace validation: balanced (depth 0, no negative nesting).
+- Responsive branch was rebuilt from the latest `main` after detecting concurrent repository changes; no parallel-worker commit was overwritten.
+
+Implementation commit:
+- `b8909d590debf4f4602065feee19916212c3f44f` — cross-device responsive override pass.
+
+Status: IMPLEMENTED on `ai/responsive-all-devices-20260922-v2`; production deployment/live branch rendering is not assumed.
+
