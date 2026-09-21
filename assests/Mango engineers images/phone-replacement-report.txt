@@ -1,0 +1,65 @@
+Source images: 58
+Phone replaced: 56
+No phone match: 2
+
+Matched files:
+advance-core-java-course-jaipur-mango-engineers.webp
+android-app-development-course-jaipur-mango-engineers.webp
+angular-course-jaipur-mango-engineers.webp
+artificial-intelligence-course-jaipur-mango-engineers.webp
+aws-course-jaipur-mango-engineers.webp
+c-plus-plus-course-jaipur-mango-engineers.webp
+c-programming-course-jaipur-mango-engineers.webp
+c-sharp-course-jaipur-mango-engineers.webp
+canva-course-jaipur-mango-engineers.webp
+ceh-course-jaipur-mango-engineers.webp
+core-java-course-jaipur-mango-engineers.webp
+data-science-course-jaipur-mango-engineers.webp
+devops-course-jaipur-mango-engineers.webp
+docker-course-jaipur-mango-engineers.webp
+dotnet-full-stack-course-jaipur-mango-engineers.webp
+email-marketing-course-jaipur-mango-engineers.webp
+ethical-hacking-course-jaipur-mango-engineers.webp
+figma-course-jaipur-mango-engineers.webp
+flutter-course-jaipur-mango-engineers.webp
+full-stack-development-course-jaipur-mango-engineers.webp
+generative-ai-course-jaipur-mango-engineers.webp
+google-ads-course-jaipur-mango-engineers.webp
+graphic-design-course-jaipur-mango-engineers.webp
+hibernate-course-jaipur-mango-engineers.webp
+java-courses-jaipur-mango-engineers.webp
+java-full-stack-course-jaipur-mango-engineers.webp
+java-microservices-course-jaipur-mango-engineers.webp
+java-programming-course-jaipur-mango-engineers.webp
+java-rest-api-course-jaipur-mango-engineers.webp
+javascript-course-jaipur-mango-engineers.webp
+jdbc-course-jaipur-mango-engineers.webp
+jpa-course-jaipur-mango-engineers.webp
+kubernetes-course-jaipur-mango-engineers.webp
+linux-course-jaipur-mango-engineers.webp
+machine-learning-course-jaipur-mango-engineers.webp
+mean-stack-course-jaipur-mango-engineers.webp
+mern-stack-course-jaipur-mango-engineers.webp
+microsoft-azure-course-jaipur-mango-engineers.webp
+next-js-course-jaipur-mango-engineers.webp
+node-js-course-jaipur-mango-engineers.webp
+oogle-cloud-computing-course-jaipur-mango-engineers.webp
+paid-ads-course-jaipur-mango-engineers.webp
+php-course-jaipur-mango-engineers.webp
+power-bi-course-jaipur-mango-engineers.webp
+python-full-stack-course-jaipur-mango-engineers.webp
+python-programming-course-jaipur-mango-engineers.webp
+react-js-course-in-jaipur-mango-engineers.webp
+react-js-course-jaipur-mango-engineers.webp
+servlets-jsp-course-jaipur-mango-engineers.webp
+social-media-marketing-course-jaipur-mango-engineers.webp
+spring-boot-course-jaipur-mango-engineers.webp
+spring-framework-course-jaipur-mango-engineers.webp
+spring-mvc-course-jaipur-mango-engineers.webp
+ui-ux-design-course-jaipur-mango-engineers.webp
+video-editing-course-jaipur-mango-engineers.webp
+windows-server-administration-course-jaipur-mango-engineers.webp
+
+No-match files:
+cropped-All-Brands-logos-Groot-Logo-scaled-1.webp
+tech-career-smart-learning-student-python-java-ai-web-development.png
