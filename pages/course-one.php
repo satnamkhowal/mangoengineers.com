@@ -46,10 +46,10 @@
                 'courses' => [
                     ['Java Programming', 'java-courses-jaipur-mango-engineers.webp', 'Core Java, advanced Java, JDBC, Servlets/JSP, Hibernate, Spring and Spring Boot pathway.', 'java-course-jaipur.html'],
                     ['Python Programming', 'python-programming-course-jaipur-mango-engineers.webp', 'Python fundamentals, problem solving and a base for backend, automation, data and AI.', 'python-course-jaipur.html'],
-                    ['C Programming', 'c-programming-course-jaipur-mango-engineers.webp', 'Programming fundamentals, logic building and structured problem solving with C.'],
-                    ['C++ Programming', 'c-plus-plus-course-jaipur-mango-engineers.webp', 'Object-oriented programming and strong programming foundations with C++.'],
+                    ['C Programming', 'c-programming-course-jaipur-mango-engineers.webp', 'Programming fundamentals, logic building and structured problem solving with C.', 'c-cpp-programming-course-jaipur.html'],
+                    ['C++ Programming', 'c-plus-plus-course-jaipur-mango-engineers.webp', 'Object-oriented programming and strong programming foundations with C++.', 'c-cpp-programming-course-jaipur.html'],
                     ['JavaScript', 'javascript-course-jaipur-mango-engineers.webp', 'Modern JavaScript for interactive web development and frontend/full stack paths.'],
-                    ['PHP Development', 'php-course-jaipur-mango-engineers.webp', 'Server-side web development foundations with PHP and database-driven applications.'],
+                    ['PHP Development', 'php-course-jaipur-mango-engineers.webp', 'Server-side web development foundations with PHP and database-driven applications.', 'php-course-jaipur.html'],
                 ],
             ],
             'full-stack' => [
