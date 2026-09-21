@@ -116,12 +116,13 @@ $sendError = isset($_GET['error']) && $_GET['error'] === '1';
                                     <div class="form-group col-12">
                                         <label>
                                             <input type="checkbox" name="contact-consent" value="yes" required>
-                                            I agree that Mango Engineers may use these details to respond to my enquiry. See the <a href="privacy-policy.html">Privacy Policy</a>.
+                                            I agree that Mango Engineers may use these details to contact me about this enquiry.
                                         </label>
                                     </div>
 
                                     <div class="form-group col-12">
                                         <button class="rn-btn edu-btn btn-medium submit-btn" name="submit" type="submit">Send Enquiry <i class="icon-4"></i></button>
+                                        <p class="mt--15 mb--0"><small>Please do not include passwords, payment details or other sensitive information in your message.</small></p>
                                     </div>
                                 </div>
                             </form>
