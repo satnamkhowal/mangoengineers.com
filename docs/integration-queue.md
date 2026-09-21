@@ -4,6 +4,15 @@ Shared/global changes are reviewed by the master coordinator. Workers should app
 
 ## Active
 
+### IQ-005 — Production deployment/runtime drift
+Source: ME-PROD-500-001 / ME-DEPLOY-001
+State: BLOCKED
+Shared scope: production deployment, PHP runtime, deployed file consistency
+Observed live: homepage responds, but course-one.html, contact-us.html and java-course-jaipur.html return HTTP 500; About still serves pre-cleanup demo content.
+Repository state: PHP architecture CI passes; no deployment workflow/config is present in .github/workflows.
+Next action: inspect the authorized production host error log and deployed file set, deploy one coherent current-main snapshot, then verify HTTP 200 and rendered content before marking anything LIVE VERIFIED.
+
+
 ### IQ-003 — Canonical URL migration
 Source: ME-SEO-URL-001
 State: UNCLAIMED
@@ -17,7 +26,7 @@ Shared files: robots.txt, sitemap.xml
 Dependency: IQ-003 approved canonical URL set.
 
 ## Completed
-- ME-LEAD-001 contact/lead code integrated on main. Final contact consent adjustment: `33a70b9fa9bbfac5a6096ad7b0f3df170cfd741a`. Production mail delivery remains a deployment verification requirement; task stays REVIEW until an authorized synthetic enquiry is received.
+- ME-LEAD-001 contact/lead code integrated on main. Final contact consent adjustment: `33a70b9fa9bbfac5a6096ad7b0f3df170cfd741a`. Production verification is BLOCKED because contact-us.html currently returns HTTP 500; mail delivery must be tested only after the runtime/deployment issue is fixed.
 - B002 shared course metadata/catalogue integration — main commit 51777c616c17a8c64a2dd1c5bfbd386dd840cb69.
 - B003 AI/data/cloud/DevOps metadata + catalogue integration — main commit 3dc4d4dd61db6d6a5d04a44fe3e4b370f72bfbda.
 
@@ -25,3 +34,7 @@ Dependency: IQ-003 approved canonical URL set.
 - refactor/php-common-layout review — closed without merge; shared architecture already integrated or superseded.
 - refactor/php-page-bodies review — closed without merge; main page bodies are newer.
 - Main-push PHP architecture CI gate — commit b832c2c31b92cacb1a23e8cd9efc975c8878a8d6.
+
+- B004 course integration — main commit `c781c68dd2cd5d2a97cf7ecc3d02240f1aec0e85`; duplicate PR #9 closed.
+- B005 course integration — main commit `631edf3dbfeb67861bbafaafb32068fb0a019789`; duplicate PR #14 closed.
+- Lead-form duplicate PR #13 closed after reviewed code was already integrated on main.
