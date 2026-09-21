@@ -1,5 +1,7 @@
 # Mango Engineers Master Audit — 2026-09-21
 
+> **Status update — 2026-09-22:** This file is a historical pre-remediation baseline. Since this audit was captured, the shared PHP conversion, Mango Engineers homepage/course catalogue, B001 course pages, and B002 course pages have been integrated into `main`. Findings below that describe the pre-remediation homepage or missing course-page work should be read in that historical context. The live/repository URL migration, form/backend verification, remaining demo-page cleanup, sitemap/robots work, and broader SEO/content audit still require separate verification.
+
 ## Audit scope
 
 This document records the first supervisor audit of the Mango Engineers repository and live website before major content or architecture changes.
