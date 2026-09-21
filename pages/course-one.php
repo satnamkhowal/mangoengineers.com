@@ -1,873 +1,208 @@
-
-        <!--=====================================-->
-        <!--=       Breadcrumb Area Start      =-->
-        <!--=====================================-->
-
-
+<?php $site = mango_site(); ?>
         <div class="edu-breadcrumb-area">
             <div class="container">
                 <div class="breadcrumb-inner">
-                    <div class="page-title">
-                        <h1 class="title">Course Style 1</h1>
-                    </div>
+                    <div class="page-title"><h1 class="title">Technology Courses in Jaipur</h1></div>
                     <ul class="edu-breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="separator"><i class="icon-angle-right"></i></li>
-                        <li class="breadcrumb-item"><a href="#">Courses</a></li>
-                        <li class="separator"><i class="icon-angle-right"></i></li>
-                        <li class="breadcrumb-item active" aria-current="page">Course Style 1</li>
+                        <li class="breadcrumb-item active" aria-current="page">Courses</li>
                     </ul>
                 </div>
             </div>
-            <ul class="shape-group">
-                <li class="shape-1">
-                    <span></span>
-                </li>
-                <li class="shape-2 scene"><img data-depth="2" src="assets/images/about/shape-13.png" alt="shape"></li>
-                <li class="shape-3 scene"><img data-depth="-2" src="assets/images/about/shape-15.png" alt="shape"></li>
-                <li class="shape-4">
-                    <span></span>
-                </li>
-                <li class="shape-5 scene"><img data-depth="2" src="assets/images/about/shape-07.png" alt="shape"></li>
-            </ul>
         </div>
 
-        <!--=====================================-->
-        <!--=        Courses Area Start         =-->
-        <!--=====================================-->
-        <div class="edu-course-area course-area-1 gap-tb-text">
+        <div class="edu-section-gap edu-about-area about-style-4">
             <div class="container">
-
-
-                <div class="edu-sorting-area">
-                    <div class="sorting-left">
-                        <h6 class="showing-text">We found <span>71</span> courses available for you</h6>
-                    </div>
-                    <div class="sorting-right">
-                        <div class="layout-switcher">
-                            <label>Grid</label>
-                            <ul class="switcher-btn">
-                                <li><a href="course-one.html" class="active"><i class="icon-53"></i></a></li>
-                                <li><a href="course-four.html" class=""><i class="icon-54"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="edu-sorting">
-                            <div class="icon"><i class="icon-55"></i></div>
-                            <select class="edu-select">
-                                <option>Filters</option>
-                                <option>Low To High</option>
-                                <option>High Low To</option>
-                                <option>Last Viewed</option>
-                            </select>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <div class="section-title section-left">
+                            <span class="pre-title">Mango Engineers Course Catalogue</span>
+                            <h2 class="title">Choose a Skill, Stack or Career Path</h2>
+                            <span class="shape-line"><i class="icon-19"></i></span>
+                            <p>Explore practical technology training for programming, full stack development, data, AI, cloud, DevOps, cyber security, design and digital marketing. Course mode and batch availability may vary by track.</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="row g-5">
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="100" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
+                    <div class="col-lg-5">
+                        <div class="home-one-cta edu-cta-box bg-image">
                             <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-07.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>7 Weeks</span>
-                                    </div>
-                                </div>
                                 <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">The Complete Camtasia Course for Content Creators</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /9 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$49.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>15 Lessons</li>
-                                        <li><i class="icon-25"></i>31 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Advanced</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">The Complete Camtasia Course for Content Creators</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /9 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$49.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>15 Lessons</li>
-                                        <li><i class="icon-25"></i>31 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
+                                    <span class="subtitle">Need a recommendation?</span>
+                                    <h3 class="title"><a href="contact-us.html">Book Course Counselling</a></h3>
+                                    <p><a href="tel:<?= mango_e($site['phone_href']) ?>"><?= mango_e($site['phone_display']) ?></a></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-04.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>9 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Intermediate</span>
-                                    <h6 class="title">
-                                        <a href="#">Starting SEO as your Home Based Business</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(4.9 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$35.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>74 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Intermediate</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">Starting SEO as your Home Based Business</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(4.9 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$35.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>74 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-05.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>4 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">Building A Better World One Student At A Time</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">Building A Better World One Student At A Time</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-06.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>4 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">Java Programming Masterclass for Software Developers</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /18 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$19.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>24 Lessons</li>
-                                        <li><i class="icon-25"></i>95 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">Java Programming Masterclass for Software Developers</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /18 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$19.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>24 Lessons</li>
-                                        <li><i class="icon-25"></i>95 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-24.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>8 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">Angular & NodeJS - The MEAN Stack Guide [2024 Edition]</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">Angular & NodeJS - The MEAN Stack Guide [2024 Edition]</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-25.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>3 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">The Complete React Developer Course (Hooks and Redux)</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">The Complete React Developer Course (Hooks and Redux)</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-26.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>3 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">Build an app with ASPNET Core & Angular from Scratch Begainer</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">Build an app with ASPNET Core & Angular from Scratch Begainer</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-27.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>3 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">Become a WordPress Developer: Unlocking Power with Code</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">Become a WordPress Developer: Unlocking Power with Code</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-28.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>3 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">Build Responsive Real- World Websites with HTML and CSS</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">Build Responsive Real- World Websites with HTML and CSS</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-29.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>3 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">Vue - The Complete Guide (w/ Router, Vuex, Composition API)</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">Vue - The Complete Guide (w/ Router, Vuex, Composition API)</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-30.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>3 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">Master Microservices with Spring Boot and Spring Cloud</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">Master Microservices with Spring Boot and Spring Cloud</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                    <!-- Start Single Course  -->
-                    <div class="col-md-6 col-lg-4 col-xl-3" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-course course-style-1 course-box-shadow hover-button-bg-white">
-                            <div class="inner">
-                                <div class="thumbnail">
-                                    <a href="course-details.html">
-                                        <img src="assets/images/course/course-31.jpg" alt="Course Meta">
-                                    </a>
-                                    <div class="time-top">
-                                        <span class="duration"><i class="icon-61"></i>3 Weeks</span>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="#">The Complete Angular Course: Beginner to Advanced</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="course-hover-content-wrapper">
-                                <button class="wishlist-btn"><i class="icon-22"></i></button>
-                            </div>
-                            <div class="course-hover-content">
-                                <div class="content">
-                                    <button class="wishlist-btn"><i class="icon-22"></i></button>
-                                    <span class="course-level">Beginner</span>
-                                    <h6 class="title">
-                                        <a href="course-details.html">The Complete Angular Course: Beginner to Advanced</a>
-                                    </h6>
-                                    <div class="course-rating">
-                                        <div class="rating">
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                            <i class="icon-23"></i>
-                                        </div>
-                                        <span class="rating-count">(5.0 /7 Rating)</span>
-                                    </div>
-                                    <div class="course-price">$29.00</div>
-                                    <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor.</p>
-                                    <ul class="course-meta">
-                                        <li><i class="icon-24"></i>8 Lessons</li>
-                                        <li><i class="icon-25"></i>20 Students</li>
-                                    </ul>
-                                    <a href="course-details.html" class="edu-btn btn-secondary btn-small">Enrolled <i class="icon-4"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Course  -->
-                </div>
-                <div class="load-more-btn" data-sal-delay="100" data-sal="slide-up" data-sal-duration="1200">
-                    <a href="course-one.html" class="edu-btn">Load More <i class="icon-56"></i></a>
                 </div>
             </div>
         </div>
-        <!-- End Course Area -->
-        <!--=====================================-->
-        <!--=        Footer Area Start          =-->
-        <!--=====================================-->
-        <!-- Start Footer Area  -->
-        
+
+        <?php
+        $courseGroups = [
+            'programming' => [
+                'title' => 'Programming & Software Development',
+                'description' => 'Build strong coding foundations and progress toward backend or full stack development.',
+                'courses' => [
+                    ['Java Programming', 'java-courses-jaipur-mango-engineers.webp', 'Core Java, advanced Java, JDBC, Servlets/JSP, Hibernate, Spring and Spring Boot pathway.'],
+                    ['Python Programming', 'python-programming-course-jaipur-mango-engineers.webp', 'Python fundamentals, problem solving and a base for backend, automation, data and AI.'],
+                    ['C Programming', 'c-programming-course-jaipur-mango-engineers.webp', 'Programming fundamentals, logic building and structured problem solving with C.'],
+                    ['C++ Programming', 'c-plus-plus-course-jaipur-mango-engineers.webp', 'Object-oriented programming and strong programming foundations with C++.'],
+                    ['JavaScript', 'javascript-course-jaipur-mango-engineers.webp', 'Modern JavaScript for interactive web development and frontend/full stack paths.'],
+                    ['PHP Development', 'php-course-jaipur-mango-engineers.webp', 'Server-side web development foundations with PHP and database-driven applications.'],
+                ],
+            ],
+            'full-stack' => [
+                'title' => 'Full Stack Development',
+                'description' => 'Frontend, backend, databases, APIs and project development in structured full stack paths.',
+                'courses' => [
+                    ['Full Stack Development', 'full-stack-development-course-jaipur-mango-engineers.webp', 'A broad web development path covering frontend, backend, APIs and databases.'],
+                    ['Java Full Stack', 'java-full-stack-course-jaipur-mango-engineers.webp', 'Frontend foundations plus Java backend, Spring ecosystem, APIs and databases.'],
+                    ['Python Full Stack', 'python-full-stack-course-jaipur-mango-engineers.webp', 'Frontend development paired with Python-based backend and database work.'],
+                    ['MERN Stack', 'mern-stack-course-jaipur-mango-engineers.webp', 'MongoDB, Express, React and Node.js-oriented full stack development.'],
+                    ['MEAN Stack', 'mean-stack-course-jaipur-mango-engineers.webp', 'MongoDB, Express, Angular and Node.js full stack development.'],
+                    ['.NET Full Stack', 'dotnet-full-stack-course-jaipur-mango-engineers.webp', '.NET-oriented backend development with modern frontend and database skills.'],
+                ],
+            ],
+            'data-ai' => [
+                'title' => 'Data, Analytics & Artificial Intelligence',
+                'description' => 'Develop analytical, data and AI capabilities from reporting foundations to advanced machine learning.',
+                'courses' => [
+                    ['Data Analytics', 'power-bi-course-jaipur-mango-engineers.webp', 'Analytics workflow covering spreadsheets, SQL, reporting and dashboard skills.'],
+                    ['Power BI', 'power-bi-course-jaipur-mango-engineers.webp', 'Data modelling, reporting and interactive dashboard development with Power BI.'],
+                    ['Data Science', 'data-science-course-jaipur-mango-engineers.webp', 'Python, data handling, analysis, statistics and machine learning foundations.'],
+                    ['Machine Learning', 'machine-learning-course-jaipur-mango-engineers.webp', 'Supervised and unsupervised learning concepts with practical model workflows.'],
+                    ['Artificial Intelligence', 'artificial-intelligence-course-jaipur-mango-engineers.webp', 'AI foundations and practical problem-solving pathways using modern tools.'],
+                    ['Generative AI', 'generative-ai-course-jaipur-mango-engineers.webp', 'Modern GenAI concepts, prompting, application workflows and practical use cases.'],
+                ],
+            ],
+            'cloud-devops' => [
+                'title' => 'Cloud, Linux & DevOps',
+                'description' => 'Build deployment, infrastructure and cloud skills used in modern engineering teams.',
+                'courses' => [
+                    ['Linux', 'linux-course-jaipur-mango-engineers.webp', 'Linux command line, administration foundations and practical server skills.'],
+                    ['AWS Cloud', 'aws-course-jaipur-mango-engineers.webp', 'Cloud concepts and AWS-oriented infrastructure foundations.'],
+                    ['Microsoft Azure', 'microsoft-azure-course-jaipur-mango-engineers.webp', 'Azure cloud services and infrastructure foundations.'],
+                    ['DevOps', 'devops-course-jaipur-mango-engineers.webp', 'DevOps concepts, automation workflow, CI/CD thinking and deployment practices.'],
+                    ['Docker', 'docker-course-jaipur-mango-engineers.webp', 'Container concepts and application packaging with Docker.'],
+                    ['Kubernetes', 'kubernetes-course-jaipur-mango-engineers.webp', 'Container orchestration concepts and Kubernetes foundations.'],
+                ],
+            ],
+            'security-design-marketing' => [
+                'title' => 'Cyber Security, Design & Digital Growth',
+                'description' => 'Specialised learning paths beyond core software engineering.',
+                'courses' => [
+                    ['Ethical Hacking', 'ethical-hacking-course-jaipur-mango-engineers.webp', 'Security foundations, ethical testing concepts and defensive awareness.'],
+                    ['CEH Preparation', 'ceh-course-jaipur-mango-engineers.webp', 'Structured learning around ethical hacking concepts relevant to CEH preparation.'],
+                    ['UI/UX Design', 'ui-ux-design-course-jaipur-mango-engineers.webp', 'User experience, interface design and product design workflow.'],
+                    ['Figma', 'figma-course-jaipur-mango-engineers.webp', 'Interface design, prototyping and collaborative design workflow in Figma.'],
+                    ['Graphic Design', 'graphic-design-course-jaipur-mango-engineers.webp', 'Visual communication and practical design foundations.'],
+                    ['Digital Marketing', 'social-media-marketing-course-jaipur-mango-engineers.webp', 'SEO, social media, paid advertising and digital campaign foundations.'],
+                ],
+            ],
+        ];
+        ?>
+
+        <?php foreach ($courseGroups as $groupId => $group): ?>
+        <div class="edu-course-area section-gap-equal <?= $groupId === 'full-stack' || $groupId === 'cloud-devops' ? 'bg-lighten01' : '' ?>" id="<?= mango_e($groupId) ?>">
+            <div class="container">
+                <div class="section-title section-center">
+                    <span class="pre-title">Course Family</span>
+                    <h2 class="title"><?= mango_e($group['title']) ?></h2>
+                    <span class="shape-line"><i class="icon-19"></i></span>
+                    <p><?= mango_e($group['description']) ?></p>
+                </div>
+                <div class="row g-5">
+                    <?php foreach ($group['courses'] as $course): ?>
+                    <?php $slug = strtolower(trim(preg_replace('/[^a-z0-9]+/i', '-', $course[0]), '-')); ?>
+                    <div class="col-xl-4 col-md-6" id="<?= mango_e($slug) ?>">
+                        <div class="edu-course course-style-5 course-style-17 h-100">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="contact-us.html">
+                                        <img src="assests/Mango%20engineers%20images/<?= mango_e($course[1]) ?>" alt="<?= mango_e($course[0]) ?> course in Jaipur">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <span class="pre-title">Mango Engineers Jaipur</span>
+                                    <h5 class="title"><?= mango_e($course[0]) ?></h5>
+                                    <p><?= mango_e($course[2]) ?></p>
+                                    <a href="contact-us.html" class="edu-btn btn-small">Get Syllabus & Fee</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+        <?php endforeach; ?>
+
+        <div class="edu-section-gap edu-about-area about-style-4" id="career-programs">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="section-title section-left">
+                            <span class="pre-title">Career Programs</span>
+                            <h2 class="title">Need a Longer Software Engineering Roadmap?</h2>
+                            <span class="shape-line"><i class="icon-19"></i></span>
+                            <p>Mango Engineers is structuring longer learning pathways for students who want more than a short course — including software engineering, full stack and data-focused career programs.</p>
+                        </div>
+                        <ul class="features-list">
+                            <li>Software engineering pathway after 10th</li>
+                            <li>Software engineering pathway after 12th</li>
+                            <li>Become a software engineer without relying only on a BCA/MCA route</li>
+                            <li>Full Stack Development career program</li>
+                            <li>Data Analytics / Data & AI career program</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="about-image-gallery">
+                            <div class="main-img-1"><img src="assests/Mango%20engineers%20images/java-full-stack-course-jaipur-mango-engineers.webp" alt="Software engineering career program in Jaipur"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edu-course-area section-gap-equal bg-lighten01" id="internships">
+            <div class="container">
+                <div class="section-title section-center">
+                    <span class="pre-title">Internship Pathways</span>
+                    <h2 class="title">Practice Beyond the Classroom</h2>
+                    <span class="shape-line"><i class="icon-19"></i></span>
+                    <p>Applicable programs can include internship-oriented learning with guided tasks, practical work, project deliverables and career preparation. Confirm the exact duration and eligibility for your selected track.</p>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <?php foreach ([['15-Day Foundation Internship','Foundation exposure and guided practical tasks.'],['45-Day Skill Builder Internship','Structured practical work with deeper assignments and project components.'],['60-Day Advanced Internship','Extended practical learning with project-focused deliverables.']] as $internship): ?>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="features-box features-style-7 h-100">
+                            <div class="content">
+                                <h5 class="title"><?= mango_e($internship[0]) ?></h5>
+                                <p><?= mango_e($internship[1]) ?></p>
+                                <a href="contact-us.html" class="edu-btn btn-small">Check Eligibility</a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-one-cta-two cta-area-1 section-gap-equal">
+            <div class="container">
+                <div class="home-one-cta edu-cta-box bg-image">
+                    <div class="inner">
+                        <div class="content">
+                            <span class="subtitle">Unsure which track fits your goal?</span>
+                            <h3 class="title"><a href="contact-us.html">Get a Course Recommendation</a></h3>
+                            <p>Choose classroom or online learning and confirm the most convenient Jaipur branch with the counselling team.</p>
+                        </div>
+                        <div class="content">
+                            <span class="subtitle">Call</span>
+                            <h3 class="title"><a href="tel:<?= mango_e($site['phone_href']) ?>"><?= mango_e($site['phone_display']) ?></a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
