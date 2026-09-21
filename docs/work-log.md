@@ -42,3 +42,23 @@ Commits:
 - `426987b32009813a45b8c6e22abf6bdc2269adb6` — load override stylesheet.
 
 Status: IMPLEMENTED/MERGED on main. Production deployment/live verification not assumed.
+
+## 2026-09-22 — Integration review: superseded branches and CI gate
+
+Branches reviewed:
+- build/mango-home-v1
+- refactor/php-common-layout
+- refactor/php-page-bodies
+
+Decision:
+- No wholesale merge for these branches.
+- build/mango-home-v1 is substantially behind main; current main contains equivalent/newer homepage/header/catalogue work plus direct links to merged course pages.
+- Common-layout refactor has core files already integrated; selected files such as .htaccess, footer, site-config and page.php are identical, while main head/header/page-config are newer.
+- Page-body refactor is superseded by newer main page bodies and later demo/course cleanup.
+
+Shared integration completed:
+- PHP Architecture Check now runs on direct pushes to main.
+- Commit: b832c2c31b92cacb1a23e8cd9efc975c8878a8d6
+- A GitHub Actions run was triggered and was queued when checked.
+
+No production deployment/live claim was made.
