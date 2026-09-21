@@ -5,10 +5,12 @@ Shared/global changes are reviewed by the master coordinator. Workers should app
 ## Active
 
 ### IQ-001 — Contact/lead system
-Source: ai/fix-contact-lead-form / ME-LEAD-001
-State: WAITING_FOR_REVIEW
+Source: ai/fix-contact-lead-form-v3 / ME-LEAD-001
+State: READY_FOR_REVIEW
+PR: #13
 Shared files: includes/site-config.php, mail.php, pages/contact-us.php
-Coordinator note: branch is still IN_PROGRESS. Review form action, host mail transport, validation, success/error behavior and privacy handling before merge.
+Worker QA: PHP Architecture Check passed on the implementation during branch QA. Demo contact data/external endpoint were removed; local validation, honeypot, consent, same-origin checks and non-JS fallback were added.
+Coordinator note: review PR #13. After merge/deployment, verify the host can deliver PHP mail from the domain sender. Do not mark LIVE until an authorized test enquiry is received. The existing privacy-policy page remains template copy and should be handled separately under demo cleanup.
 
 ### IQ-003 — Canonical URL migration
 Source: ME-SEO-URL-001
