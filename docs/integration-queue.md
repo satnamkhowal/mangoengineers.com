@@ -10,12 +10,6 @@ State: WAITING_FOR_REVIEW
 Shared files: includes/site-config.php, mail.php, pages/contact-us.php
 Coordinator note: branch is still IN_PROGRESS. Review form action, host mail transport, validation, success/error behavior and privacy handling before merge.
 
-### IQ-002 — Homepage/header legacy branch
-Source: build/mango-home-v1 / ME-HOME-001
-State: INTEGRATION_REQUIRED
-Shared files: includes/header.php, pages/index.php, pages/course-one.php
-Coordinator note: branch is far behind main. Extract only unique still-useful content after semantic comparison; never merge whole files over current main.
-
 ### IQ-003 — Canonical URL migration
 Source: ME-SEO-URL-001
 State: UNCLAIMED
@@ -31,3 +25,8 @@ Dependency: IQ-003 approved canonical URL set.
 ## Completed
 - B002 shared course metadata/catalogue integration — main commit 51777c616c17a8c64a2dd1c5bfbd386dd840cb69.
 - B003 AI/data/cloud/DevOps metadata + catalogue integration — main commit 3dc4d4dd61db6d6a5d04a44fe3e4b370f72bfbda.
+
+- build/mango-home-v1 review — closed without merge; current main is newer and preserves the useful intent.
+- refactor/php-common-layout review — closed without merge; shared architecture already integrated or superseded.
+- refactor/php-page-bodies review — closed without merge; main page bodies are newer.
+- Main-push PHP architecture CI gate — commit b832c2c31b92cacb1a23e8cd9efc975c8878a8d6.
