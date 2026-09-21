@@ -5,6 +5,7 @@ const MANGO_SITE_NAME = 'Mango Engineers';
 const MANGO_SITE_URL = 'https://mangoengineers.com';
 const MANGO_PHONE_DISPLAY = '+91 9649695189';
 const MANGO_PHONE_HREF = '+919649695189';
+const MANGO_CONTACT_EMAIL = 'info@mangoengineers.com';
 
 function mango_site(): array
 {
@@ -13,6 +14,7 @@ function mango_site(): array
         'url' => MANGO_SITE_URL,
         'phone_display' => MANGO_PHONE_DISPLAY,
         'phone_href' => MANGO_PHONE_HREF,
+        'email' => MANGO_CONTACT_EMAIL,
         'social' => [
             'linkedin' => 'https://www.linkedin.com/company/MangoEngineers/',
             'facebook' => 'https://www.facebook.com/MangoEngineers/',
