@@ -92,3 +92,46 @@ Implementation commit:
 
 Status: IMPLEMENTED on `ai/responsive-all-devices-20260922-v2`; production deployment/live branch rendering is not assumed.
 
+
+
+## 2026-09-22 — ME-LEAD-001 contact/enquiry repair
+
+Worker: worker-ai-lead-01  
+Implementation branch: `ai/fix-contact-lead-form-v3`  
+PR: #13  
+Status: REVIEW
+
+Scope completed:
+- Replaced EduBlink demo address, email, phone, social links and Melbourne map on the contact page.
+- Reused centralized Mango Engineers phone, Jaipur branches, map links and social profiles.
+- Added `info@mangoengineers.com` to site config for contact/lead use.
+- Repointed the enquiry form from the external EduBlink demo endpoint to local `mail.php`.
+- Added server-side validation for name, phone, optional email, course interest and explicit enquiry consent.
+- Added honeypot handling, same-origin validation and a basic per-session submission throttle.
+- Preserved the existing theme form classes and the JSON response shape expected by the existing AJAX form JavaScript.
+- Added non-JavaScript success/error redirects and phone/email fallback messaging.
+- No submitted lead data is stored in repository files or GitHub logs.
+- Avoided linking the form to the current placeholder privacy-policy page; that page remains a separate demo-cleanup issue.
+
+Code files in PR #13:
+- `includes/site-config.php`
+- `pages/contact-us.php`
+- `mail.php`
+
+Public URL affected:
+- `contact-us.html` (preserved; no URL rename)
+
+Checks:
+- PHP Architecture Check passed during implementation QA.
+- Demo external form endpoint, fake contact details and Melbourne map are absent from the replacement page.
+- Handler success/error payloads remain compatible with the existing theme JavaScript.
+- PR #10 was closed as stale after parallel main changes; PR #13 is the clean latest-main handoff.
+
+Known issues / integration requirements:
+- Production PHP `mail()` delivery cannot be verified from repository CI. After deployment, send one authorized synthetic test enquiry and verify inbox delivery.
+- If the production host does not permit reliable PHP `mail()`, replace only the transport layer with the project's authenticated SMTP/host mail method.
+- `pages/privacy-policy.php` is still template/Lorem Ipsum content and needs a separate verified-content cleanup task.
+- Superseded branches `ai/fix-contact-lead-form` and `ai/fix-contact-lead-form-v2` must not be merged wholesale.
+
+Next action:
+- Coordinator reviews PR #13, merges if approved, then verifies deployed form delivery before marking the task DONE/LIVE VERIFIED.
