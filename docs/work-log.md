@@ -176,3 +176,39 @@ Production smoke test:
 
 Decision:
 Production is not LIVE VERIFIED. ME-PROD-500-001 and ME-DEPLOY-001 are P0 blockers. Do not mark the lead system or new course pages live until the production host is synchronised and smoke-tested.
+
+
+## 2026-09-22 — SEO competitor research cycle 001
+
+Scope:
+- verified Mango Engineers business positioning against repository truth before research
+- analyzed Java, Java Full Stack, Full Stack Development, React, Node.js, Data Analytics, Power BI, DevOps and AWS/Linux support paths
+- reviewed current SERP/live evidence and representative competitors: Forsk Coding School, Training Jaipur, DAAC, GRRAS, IIHT Jaipur and Samyak
+
+Key findings:
+- current verified positioning remains technology/programming training in Jaipur; industrial automation/PLC service pages are not supported by repository truth
+- strongest commercial course intents already have repository pages, so this cycle recommends improvement rather than duplicate page creation
+- live WordPress URLs and repository .html/PHP URLs require the separately claimed ME-SEO-URL-001 migration matrix
+- current live search evidence includes semantically wrong legacy course slugs, including Node.js content on /courses/email-marketing-course-jaipur-2/
+- live Java Full Stack output shows legacy title contamination referring to another academy
+- local NAP is inconsistent across repository/live history: repository branch config, current Shyam Nagar live output and legacy Mansarovar course details do not agree
+- DevOps competitors expose deeper tool/lab progression; Mango should strengthen the existing page rather than generate thin tool pages
+
+Research artifacts are on the SEO research branch/PR:
+- docs/seo-research/competitor-matrix.md
+- docs/seo-research/keyword-clusters.csv
+- docs/seo-research/content-gaps.md
+- docs/seo-research/local-seo-opportunities.md
+- docs/seo-research/internal-link-plan.md
+- docs/seo-research/seo-roadmap.md
+
+Implementation tasks queued on main:
+- ME-SEO-COURSE-001
+- ME-SEO-DATA-001
+- ME-SEO-DEVOPS-001
+- ME-LOCAL-NAP-001
+- ME-SEO-CONTENT-001
+
+Coordination:
+- ME-SEO-URL-001 is already IN_PROGRESS under worker-ai-seo-url-01; this research worker did not overwrite or claim it.
+- no production code or deployment change was made in this cycle.
