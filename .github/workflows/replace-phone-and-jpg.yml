@@ -1,4 +1,4 @@
-name: Replace Mango Engineers phone number and create JPG copies
+name: Replace Mango Engineers phone number and create JPG copies # verified bbox mode
 
 on:
   push:
@@ -9,6 +9,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: mango-image-phone-update
+  cancel-in-progress: true
 
 jobs:
   process-images:
