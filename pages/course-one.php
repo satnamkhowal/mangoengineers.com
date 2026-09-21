@@ -44,8 +44,8 @@
                 'title' => 'Programming & Software Development',
                 'description' => 'Build strong coding foundations and progress toward backend or full stack development.',
                 'courses' => [
-                    ['Java Programming', 'java-courses-jaipur-mango-engineers.webp', 'Core Java, advanced Java, JDBC, Servlets/JSP, Hibernate, Spring and Spring Boot pathway.'],
-                    ['Python Programming', 'python-programming-course-jaipur-mango-engineers.webp', 'Python fundamentals, problem solving and a base for backend, automation, data and AI.'],
+                    ['Java Programming', 'java-courses-jaipur-mango-engineers.webp', 'Core Java, advanced Java, JDBC, Servlets/JSP, Hibernate, Spring and Spring Boot pathway.', 'java-course-jaipur.html'],
+                    ['Python Programming', 'python-programming-course-jaipur-mango-engineers.webp', 'Python fundamentals, problem solving and a base for backend, automation, data and AI.', 'python-course-jaipur.html'],
                     ['C Programming', 'c-programming-course-jaipur-mango-engineers.webp', 'Programming fundamentals, logic building and structured problem solving with C.'],
                     ['C++ Programming', 'c-plus-plus-course-jaipur-mango-engineers.webp', 'Object-oriented programming and strong programming foundations with C++.'],
                     ['JavaScript', 'javascript-course-jaipur-mango-engineers.webp', 'Modern JavaScript for interactive web development and frontend/full stack paths.'],
@@ -56,7 +56,7 @@
                 'title' => 'Full Stack Development',
                 'description' => 'Frontend, backend, databases, APIs and project development in structured full stack paths.',
                 'courses' => [
-                    ['Full Stack Development', 'full-stack-development-course-jaipur-mango-engineers.webp', 'A broad web development path covering frontend, backend, APIs and databases.'],
+                    ['Full Stack Development', 'full-stack-development-course-jaipur-mango-engineers.webp', 'A broad web development path covering frontend, backend, APIs and databases.', 'full-stack-development-course-jaipur.html'],
                     ['Java Full Stack', 'java-full-stack-course-jaipur-mango-engineers.webp', 'Frontend foundations plus Java backend, Spring ecosystem, APIs and databases.'],
                     ['Python Full Stack', 'python-full-stack-course-jaipur-mango-engineers.webp', 'Frontend development paired with Python-based backend and database work.'],
                     ['MERN Stack', 'mern-stack-course-jaipur-mango-engineers.webp', 'MongoDB, Express, React and Node.js-oriented full stack development.'],
@@ -119,7 +119,7 @@
                         <div class="edu-course course-style-5 course-style-17 h-100">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="contact-us.html">
+                                    <a href="<?= mango_e($course[3] ?? 'contact-us.html') ?>">
                                         <img src="assests/Mango%20engineers%20images/<?= mango_e($course[1]) ?>" alt="<?= mango_e($course[0]) ?> course in Jaipur">
                                     </a>
                                 </div>
@@ -127,7 +127,7 @@
                                     <span class="pre-title">Mango Engineers Jaipur</span>
                                     <h5 class="title"><?= mango_e($course[0]) ?></h5>
                                     <p><?= mango_e($course[2]) ?></p>
-                                    <a href="contact-us.html" class="edu-btn btn-small">Get Syllabus & Fee</a>
+                                    <a href="<?= mango_e($course[3] ?? 'contact-us.html') ?>" class="edu-btn btn-small"><?= isset($course[3]) ? 'View Course' : 'Get Syllabus & Fee' ?></a>
                                 </div>
                             </div>
                         </div>
