@@ -14,6 +14,345 @@ OLD = "7231968183"
 NEW = "+91 9649695189"
 VALID_EXTS = {".webp", ".png", ".jpg", ".jpeg"}
 
+KNOWN_BBOXES = {
+    "advance-core-java-course-jaipur-mango-engineers.webp": [
+        44,
+        950,
+        268,
+        48
+    ],
+    "android-app-development-course-jaipur-mango-engineers.webp": [
+        46,
+        946,
+        266,
+        47
+    ],
+    "angular-course-jaipur-mango-engineers.webp": [
+        44,
+        950,
+        268,
+        48
+    ],
+    "artificial-intelligence-course-jaipur-mango-engineers.webp": [
+        103,
+        955,
+        248,
+        32
+    ],
+    "aws-course-jaipur-mango-engineers.webp": [
+        47,
+        960,
+        264,
+        47
+    ],
+    "c-plus-plus-course-jaipur-mango-engineers.webp": [
+        46,
+        942,
+        264,
+        46
+    ],
+    "c-programming-course-jaipur-mango-engineers.webp": [
+        46,
+        942,
+        264,
+        46
+    ],
+    "c-sharp-course-jaipur-mango-engineers.webp": [
+        46,
+        941,
+        264,
+        46
+    ],
+    "canva-course-jaipur-mango-engineers.webp": [
+        38,
+        936,
+        276,
+        51
+    ],
+    "ceh-course-jaipur-mango-engineers.webp": [
+        40,
+        930,
+        272,
+        49
+    ],
+    "core-java-course-jaipur-mango-engineers.webp": [
+        45,
+        950,
+        268,
+        48
+    ],
+    "data-science-course-jaipur-mango-engineers.webp": [
+        42,
+        947,
+        268,
+        48
+    ],
+    "devops-course-jaipur-mango-engineers.webp": [
+        47,
+        960,
+        264,
+        46
+    ],
+    "docker-course-jaipur-mango-engineers.webp": [
+        47,
+        960,
+        264,
+        46
+    ],
+    "dotnet-full-stack-course-jaipur-mango-engineers.webp": [
+        45,
+        952,
+        268,
+        46
+    ],
+    "email-marketing-course-jaipur-mango-engineers.webp": [
+        44,
+        946,
+        266,
+        48
+    ],
+    "ethical-hacking-course-jaipur-mango-engineers.webp": [
+        41,
+        952,
+        272,
+        49
+    ],
+    "figma-course-jaipur-mango-engineers.webp": [
+        47,
+        948,
+        263,
+        45
+    ],
+    "flutter-course-jaipur-mango-engineers.webp": [
+        46,
+        944,
+        265,
+        48
+    ],
+    "full-stack-development-course-jaipur-mango-engineers.webp": [
+        46,
+        942,
+        264,
+        46
+    ],
+    "generative-ai-course-jaipur-mango-engineers.webp": [
+        44,
+        949,
+        266,
+        47
+    ],
+    "google-ads-course-jaipur-mango-engineers.webp": [
+        44,
+        947,
+        266,
+        47
+    ],
+    "graphic-design-course-jaipur-mango-engineers.webp": [
+        43,
+        945,
+        272,
+        50
+    ],
+    "hibernate-course-jaipur-mango-engineers.webp": [
+        46,
+        960,
+        266,
+        47
+    ],
+    "java-courses-jaipur-mango-engineers.webp": [
+        46,
+        950,
+        304,
+        48
+    ],
+    "java-full-stack-course-jaipur-mango-engineers.webp": [
+        47,
+        950,
+        264,
+        46
+    ],
+    "java-microservices-course-jaipur-mango-engineers.webp": [
+        103,
+        969,
+        247,
+        32
+    ],
+    "java-programming-course-jaipur-mango-engineers.webp": [
+        46,
+        941,
+        264,
+        47
+    ],
+    "java-rest-api-course-jaipur-mango-engineers.webp": [
+        48,
+        959,
+        302,
+        46
+    ],
+    "javascript-course-jaipur-mango-engineers.webp": [
+        46,
+        941,
+        264,
+        46
+    ],
+    "jdbc-course-jaipur-mango-engineers.webp": [
+        46,
+        966,
+        786,
+        46
+    ],
+    "jpa-course-jaipur-mango-engineers.webp": [
+        102,
+        966,
+        247,
+        33
+    ],
+    "kubernetes-course-jaipur-mango-engineers.webp": [
+        47,
+        960,
+        264,
+        46
+    ],
+    "linux-course-jaipur-mango-engineers.webp": [
+        47,
+        948,
+        266,
+        46
+    ],
+    "machine-learning-course-jaipur-mango-engineers.webp": [
+        45,
+        948,
+        266,
+        46
+    ],
+    "mean-stack-course-jaipur-mango-engineers.webp": [
+        50,
+        945,
+        260,
+        42
+    ],
+    "mern-stack-course-jaipur-mango-engineers.webp": [
+        47,
+        942,
+        264,
+        46
+    ],
+    "microsoft-azure-course-jaipur-mango-engineers.webp": [
+        47,
+        960,
+        264,
+        46
+    ],
+    "next-js-course-jaipur-mango-engineers.webp": [
+        45,
+        952,
+        269,
+        46
+    ],
+    "node-js-course-jaipur-mango-engineers.webp": [
+        46,
+        950,
+        266,
+        46
+    ],
+    "oogle-cloud-computing-course-jaipur-mango-engineers.webp": [
+        102,
+        968,
+        248,
+        32
+    ],
+    "paid-ads-course-jaipur-mango-engineers.webp": [
+        44,
+        947,
+        267,
+        47
+    ],
+    "php-course-jaipur-mango-engineers.webp": [
+        46,
+        941,
+        264,
+        46
+    ],
+    "power-bi-course-jaipur-mango-engineers.webp": [
+        43,
+        944,
+        271,
+        48
+    ],
+    "python-full-stack-course-jaipur-mango-engineers.webp": [
+        45,
+        954,
+        266,
+        46
+    ],
+    "python-programming-course-jaipur-mango-engineers.webp": [
+        46,
+        942,
+        264,
+        46
+    ],
+    "react-js-course-in-jaipur-mango-engineers.webp": [
+        88,
+        884,
+        244,
+        44
+    ],
+    "react-js-course-jaipur-mango-engineers.webp": [
+        46,
+        950,
+        266,
+        48
+    ],
+    "servlets-jsp-course-jaipur-mango-engineers.webp": [
+        100,
+        970,
+        212,
+        28
+    ],
+    "social-media-marketing-course-jaipur-mango-engineers.webp": [
+        46,
+        947,
+        266,
+        48
+    ],
+    "spring-boot-course-jaipur-mango-engineers.webp": [
+        48,
+        956,
+        302,
+        46
+    ],
+    "spring-framework-course-jaipur-mango-engineers.webp": [
+        103,
+        968,
+        248,
+        34
+    ],
+    "spring-mvc-course-jaipur-mango-engineers.webp": [
+        52,
+        972,
+        768,
+        44
+    ],
+    "ui-ux-design-course-jaipur-mango-engineers.webp": [
+        46,
+        950,
+        264,
+        46
+    ],
+    "video-editing-course-jaipur-mango-engineers.webp": [
+        42,
+        947,
+        269,
+        50
+    ],
+    "windows-server-administration-course-jaipur-mango-engineers.webp": [
+        41,
+        926,
+        272,
+        50
+    ]
+}
+
 FONT_CANDIDATES = [
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "/usr/share/fonts/truetype/liberation2/LiberationSans-Bold.ttf",
@@ -217,7 +556,7 @@ def main():
         with Image.open(path) as im:
             img = im.convert("RGB")
 
-        bbox = find_number_bbox(img)
+        bbox = KNOWN_BBOXES.get(path.name) or find_number_bbox(img)
         if bbox:
             edited = replace_phone(img, bbox)
             save_in_original_format(edited, path)
