@@ -166,12 +166,12 @@
                     <div class="col-xl-4 col-md-6" id="java">
                         <div class="edu-course course-style-5 course-style-17">
                             <div class="inner">
-                                <div class="thumbnail"><a href="course-one.html#java"><img src="assests/Mango%20engineers%20images/java-courses-jaipur-mango-engineers.webp" alt="Java course in Jaipur"></a></div>
+                                <div class="thumbnail"><a href="java-course-jaipur.html"><img src="assests/Mango%20engineers%20images/java-courses-jaipur-mango-engineers.webp" alt="Java course in Jaipur"></a></div>
                                 <div class="content">
                                     <span class="pre-title">Programming</span>
-                                    <h6 class="title"><a href="course-one.html#java">Java Programming & Backend Development</a></h6>
+                                    <h6 class="title"><a href="java-course-jaipur.html">Java Programming & Backend Development</a></h6>
                                     <p>Core Java to backend development with JDBC, Hibernate, Spring, Spring Boot, REST APIs and project work.</p>
-                                    <a href="course-one.html#java" class="edu-btn btn-small">View Track</a>
+                                    <a href="java-course-jaipur.html" class="edu-btn btn-small">View Track</a>
                                 </div>
                             </div>
                         </div>
@@ -179,12 +179,12 @@
                     <div class="col-xl-4 col-md-6" id="full-stack">
                         <div class="edu-course course-style-5 course-style-17">
                             <div class="inner">
-                                <div class="thumbnail"><a href="course-one.html#full-stack"><img src="assests/Mango%20engineers%20images/full-stack-development-course-jaipur-mango-engineers.webp" alt="Full stack development course in Jaipur"></a></div>
+                                <div class="thumbnail"><a href="full-stack-development-course-jaipur.html"><img src="assests/Mango%20engineers%20images/full-stack-development-course-jaipur-mango-engineers.webp" alt="Full stack development course in Jaipur"></a></div>
                                 <div class="content">
                                     <span class="pre-title">Web Development</span>
-                                    <h6 class="title"><a href="course-one.html#full-stack">Full Stack Development</a></h6>
+                                    <h6 class="title"><a href="full-stack-development-course-jaipur.html">Full Stack Development</a></h6>
                                     <p>Frontend, JavaScript, modern frameworks, APIs, databases and deployment-oriented project development.</p>
-                                    <a href="course-one.html#full-stack" class="edu-btn btn-small">View Track</a>
+                                    <a href="full-stack-development-course-jaipur.html" class="edu-btn btn-small">View Track</a>
                                 </div>
                             </div>
                         </div>
@@ -192,12 +192,12 @@
                     <div class="col-xl-4 col-md-6" id="python">
                         <div class="edu-course course-style-5 course-style-17">
                             <div class="inner">
-                                <div class="thumbnail"><a href="course-one.html#python"><img src="assests/Mango%20engineers%20images/python-programming-course-jaipur-mango-engineers.webp" alt="Python course in Jaipur"></a></div>
+                                <div class="thumbnail"><a href="python-course-jaipur.html"><img src="assests/Mango%20engineers%20images/python-programming-course-jaipur-mango-engineers.webp" alt="Python course in Jaipur"></a></div>
                                 <div class="content">
                                     <span class="pre-title">Programming</span>
-                                    <h6 class="title"><a href="course-one.html#python">Python Programming</a></h6>
+                                    <h6 class="title"><a href="python-course-jaipur.html">Python Programming</a></h6>
                                     <p>Learn Python fundamentals, problem solving and the base skills required for backend, automation, data and AI paths.</p>
-                                    <a href="course-one.html#python" class="edu-btn btn-small">View Track</a>
+                                    <a href="python-course-jaipur.html" class="edu-btn btn-small">View Track</a>
                                 </div>
                             </div>
                         </div>
