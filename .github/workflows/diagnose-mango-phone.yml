@@ -21,7 +21,7 @@ jobs:
         run: |
           python - <<'PY'
           from PIL import Image
-          import pytesseract, re
+          import pytesseract
           from pytesseract import Output
           from pathlib import Path
 
@@ -33,7 +33,7 @@ jobs:
               data = pytesseract.image_to_data(img, output_type=Output.DICT, config="--oem 3 --psm 11")
               print("SCALE", scale, flush=True)
               for i,t in enumerate(data["text"]):
-                  digits = re.sub(r"\\D","",t or "")
+                  digits = "".join(ch for ch in (t or "") if ch.isdigit())
                   if len(digits) >= 4:
                       print("TOKEN", repr(t), "DIGITS", digits, "BOX", data["left"][i]//scale, data["top"][i]//scale, data["width"][i]//scale, data["height"][i]//scale, flush=True)
           PY
