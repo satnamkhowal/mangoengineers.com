@@ -4,14 +4,6 @@ Shared/global changes are reviewed by the master coordinator. Workers should app
 
 ## Active
 
-### IQ-001 — Contact/lead system
-Source: ai/fix-contact-lead-form-v3 / ME-LEAD-001
-State: READY_FOR_REVIEW
-PR: #13
-Shared files: includes/site-config.php, mail.php, pages/contact-us.php
-Worker QA: PHP Architecture Check passed on the implementation during branch QA. Demo contact data/external endpoint were removed; local validation, honeypot, consent, same-origin checks and non-JS fallback were added.
-Coordinator note: review PR #13. After merge/deployment, verify the host can deliver PHP mail from the domain sender. Do not mark LIVE until an authorized test enquiry is received. The existing privacy-policy page remains template copy and should be handled separately under demo cleanup.
-
 ### IQ-003 — Canonical URL migration
 Source: ME-SEO-URL-001
 State: UNCLAIMED
@@ -25,6 +17,7 @@ Shared files: robots.txt, sitemap.xml
 Dependency: IQ-003 approved canonical URL set.
 
 ## Completed
+- ME-LEAD-001 contact/lead code integrated on main. Final contact consent adjustment: `33a70b9fa9bbfac5a6096ad7b0f3df170cfd741a`. Production mail delivery remains a deployment verification requirement; task stays REVIEW until an authorized synthetic enquiry is received.
 - B002 shared course metadata/catalogue integration — main commit 51777c616c17a8c64a2dd1c5bfbd386dd840cb69.
 - B003 AI/data/cloud/DevOps metadata + catalogue integration — main commit 3dc4d4dd61db6d6a5d04a44fe3e4b370f72bfbda.
 
