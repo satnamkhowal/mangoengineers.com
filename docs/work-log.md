@@ -92,3 +92,31 @@ Implementation commit:
 
 Status: IMPLEMENTED on `ai/responsive-all-devices-20260922-v2`; production deployment/live branch rendering is not assumed.
 
+## 2026-09-22 — Responsive page-level QA pass
+
+Follow-up responsive QA after the shared cross-device pass.
+
+Concrete edge cases fixed:
+- Contact map height now scales down at tablet and phone widths instead of remaining 600px tall.
+- Course-detail tab navigation becomes horizontally scrollable on narrow screens rather than squeezing multiple labels.
+- Event cards expose the primary action on tablet/mobile widths instead of relying on hover-only interaction.
+- Event card spacing/date badge sizing is tightened on small phones.
+- Threaded comment indentation is reduced on compact phones.
+- Back-to-top control is moved inward and reduced slightly on small screens.
+
+Reviewed without unnecessary overrides:
+- FAQ navigation already contains responsive behavior.
+- Blog sidebar already stacks below content on tablet/mobile and reduces widget padding.
+- Gallery grid already moves from three columns to two and then one at compact widths.
+- Course sidebar already moves below content at <=991px.
+
+Validation:
+- CSS remains isolated to assets/css/mango-overrides.css.
+- CSS braces balanced after the patch.
+- Branch was recreated from the latest main after detecting another concurrent main update.
+
+Implementation commit:
+- `9654adb573a89cb7660b3324e4d8df68b26f935b` — page-level responsive edge cases.
+
+Status: IMPLEMENTED on `ai/responsive-page-qa-20260922-v2`; production deployment is not assumed.
+
