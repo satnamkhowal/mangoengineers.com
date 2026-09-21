@@ -135,3 +135,23 @@ Known issues / integration requirements:
 
 Next action:
 - Coordinator reviews PR #13, merges if approved, then verifies deployed form delivery before marking the task DONE/LIVE VERIFIED.
+
+
+### ME-LEAD-001 integration update
+
+The contact/lead implementation is now integrated on `main`:
+- `f3dd17161e6fdb13d2441e12f0e31b12895fc8a4` — verified contact email integration.
+- `a3176a6142182f54ac2facb4ffaa63b6b9cc39e5` — validated Mango Engineers enquiry form integration.
+- `4a0e8fee05f71ebc159e68c91ef8bfd1c213b941` — hardened local PHP lead handler integration.
+- `33a70b9fa9bbfac5a6096ad7b0f3df170cfd741a` — self-contained consent wording and sensitive-data warning.
+
+Verification:
+- `includes/site-config.php`, `pages/contact-us.php` and `mail.php` on current main exactly match the final worker branch snapshots.
+- PHP Architecture Check passed on the final worker implementation branch before integration.
+- PR #10 and PR #13 were closed as superseded/already-integrated; they must not be merged later.
+
+State:
+- Code: IMPLEMENTED + MERGED on main.
+- Deployment: not verified.
+- Lead delivery: not verified.
+- Task remains REVIEW until an authorized synthetic enquiry reaches the configured inbox on the deployed host.
