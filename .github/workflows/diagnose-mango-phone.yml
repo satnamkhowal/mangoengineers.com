@@ -1,0 +1,39 @@
+name: Diagnose Mango Engineers phone position
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diagnose-mango-phone.yml'
+  workflow_dispatch:
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install OCR
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+          python -m pip install pillow pytesseract
+      - name: OCR sample image
+        run: |
+          python - <<'PY'
+          from PIL import Image
+          import pytesseract, re
+          from pytesseract import Output
+          from pathlib import Path
+
+          p = Path("assests/Mango engineers images/c-programming-course-jaipur-mango-engineers.webp")
+          im = Image.open(p).convert("RGB")
+          print("IMAGE_SIZE", im.size, flush=True)
+          for scale in (1, 2):
+              img = im.resize((im.width*scale, im.height*scale)) if scale > 1 else im
+              data = pytesseract.image_to_data(img, output_type=Output.DICT, config="--oem 3 --psm 11")
+              print("SCALE", scale, flush=True)
+              for i,t in enumerate(data["text"]):
+                  digits = re.sub(r"\\D","",t or "")
+                  if len(digits) >= 4:
+                      print("TOKEN", repr(t), "DIGITS", digits, "BOX", data["left"][i]//scale, data["top"][i]//scale, data["width"][i]//scale, data["height"][i]//scale, flush=True)
+          PY
