@@ -75,4 +75,4 @@ jobs:
           test -f includes/site-config.php
           test -f includes/page-config.php
           test -f includes/legacy-renderer.php
-          grep -q 'RewriteRule ^([A-Za-z0-9-]+)\\.html$ $1.php' .htaccess
+          grep -Fq 'RewriteRule ^([A-Za-z0-9-]+)\\.html$ $1.php [L,QSA]' .htaccess
