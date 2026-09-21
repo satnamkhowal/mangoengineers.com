@@ -1,0 +1,78 @@
+name: PHP Architecture Check
+
+on:
+  push:
+    branches:
+      - refactor/php-common-layout
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  php-architecture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Lint PHP
+        run: |
+          find . -maxdepth 2 -type f -name '*.php' -print0 | sort -z | xargs -0 -n1 php -l
+
+      - name: Verify every root HTML page has a PHP counterpart
+        run: |
+          failed=0
+          for html in ./*.html; do
+            php_file="${html%.html}.php"
+            if [ ! -f "$php_file" ]; then
+              echo "Missing PHP counterpart: $php_file"
+              failed=1
+            fi
+          done
+          exit "$failed"
+
+      - name: Verify metadata coverage
+        run: |
+          php -r '
+            require "includes/site-config.php";
+            require "includes/page-config.php";
+            $defs = mango_page_definitions();
+            $redirected = ["blog", "index-one"];
+            $missing = [];
+            foreach (glob("*.html") as $file) {
+                $key = basename($file, ".html");
+                if (in_array($key, $redirected, true)) {
+                    continue;
+                }
+                if (!isset($defs[$key])) {
+                    $missing[] = $key;
+                }
+            }
+            if ($missing) {
+                fwrite(STDERR, "Missing metadata: " . implode(", ", $missing) . PHP_EOL);
+                exit(1);
+            }
+            echo "Metadata coverage OK: " . count($defs) . " configured pages" . PHP_EOL;
+          '
+
+      - name: Verify shared includes
+        run: |
+          test -f includes/head.php
+          test -f includes/header.php
+          test -f includes/footer.php
+          test -f includes/site-config.php
+          test -f includes/page-config.php
+          test -f includes/legacy-renderer.php
+          grep -Fq 'RewriteRule ^([A-Za-z0-9-]+)\.html$ $1.php [L,QSA]' .htaccess

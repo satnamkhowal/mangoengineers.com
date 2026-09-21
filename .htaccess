@@ -1,0 +1,16 @@
+Options -MultiViews
+DirectoryIndex index.php index.html
+
+RewriteEngine On
+
+# Keep legacy public URLs stable while executing their PHP counterparts.
+RewriteRule ^index\.html$ index.php [L,QSA]
+
+# Two mirrored files are server-generated 404 placeholders, not real pages.
+RewriteRule ^blog\.html$ blog-standard.html [R=301,L]
+RewriteRule ^index-one\.html$ index.html [R=301,L]
+
+# Each root-level legacy HTML URL executes the matching physical PHP page.
+RewriteRule ^([A-Za-z0-9-]+)\.html$ $1.php [L,QSA]
+
+ErrorDocument 404 /404.html
