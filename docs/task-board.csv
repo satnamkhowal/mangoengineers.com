@@ -1,0 +1,2 @@
+task_id,scope,owner,status,branch,claimed_at,updated_at,commit,files_or_urls,dependencies,next_action
+ME-LEAD-001,"Repair contact/enquiry page and local lead submission flow; replace demo contact data/map; add validated local PHP mail handler",worker-ai-lead-01,IN_PROGRESS,ai/fix-contact-lead-form,2026-09-22T04:32:00+05:30,2026-09-22T04:32:00+05:30,,"pages/contact-us.php; mail.php; includes/site-config.php; contact-us.html","Host PHP mail transport / domain mail configuration","Implement handler, real contact content, validation, QA, then mark REVIEW"
