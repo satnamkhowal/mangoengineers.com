@@ -500,3 +500,96 @@ textarea {
         font-size: 32px;
     }
 }
+
+/* Page-level responsive QA */
+@media only screen and (max-width: 991px) {
+    .google-map-area #gmap_canvas {
+        height: 420px;
+    }
+
+    .edu-event.event-style-1 .thumbnail,
+    .edu-event.event-style-1:hover .thumbnail {
+        margin-bottom: 0;
+    }
+
+    .edu-event.event-style-1 .content,
+    .edu-event.event-style-1:hover .content {
+        padding: 36px 26px 30px;
+        background-color: #f7f5f2;
+    }
+
+    .edu-event.event-style-1 .content .read-more-btn,
+    .edu-event.event-style-1:hover .content .read-more-btn {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .edu-event.event-style-1 .thumbnail a:after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .course-details-content .nav-tabs {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .course-details-content .nav-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .course-details-content .nav-tabs .nav-item {
+        flex: 0 0 auto;
+        margin: 0 2px;
+    }
+
+    .course-details-content .nav-tabs .nav-item .nav-link {
+        white-space: nowrap;
+        padding: 13px 16px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .google-map-area #gmap_canvas {
+        height: 320px;
+    }
+
+    .edu-event.event-style-1 .content,
+    .edu-event.event-style-1:hover .content {
+        padding: 34px 20px 26px;
+    }
+
+    .edu-event.event-style-1 .content .event-date {
+        width: 68px;
+        height: 68px;
+        top: -34px;
+        right: 20px;
+    }
+
+    .comment-list-wrapper .comment.comment-reply {
+        margin-left: 16px;
+    }
+
+    .rn-progress-parent {
+        right: 15px;
+        bottom: 15px;
+        width: 42px;
+        height: 42px;
+    }
+
+    .rn-progress-parent::after {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 22px;
+    }
+}
+
