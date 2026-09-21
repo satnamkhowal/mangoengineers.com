@@ -3,6 +3,7 @@ name: PHP Architecture Check
 on:
   push:
     branches:
+      - main
       - refactor/php-common-layout
       - refactor/php-page-bodies
   pull_request:
