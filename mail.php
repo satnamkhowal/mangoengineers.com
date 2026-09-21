@@ -25,7 +25,7 @@ function mango_form_value(string $key, int $maxLength = 2000): string
 {
     $value = trim((string) ($_POST[$key] ?? ''));
     $value = preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u', '', $value) ?? '';
-    return mb_substr($value, 0, $maxLength);
+    return function_exists('mb_substr') ? mb_substr($value, 0, $maxLength) : substr($value, 0, $maxLength);
 }
 
 function mango_form_error(string $field, string $message, bool $isAjax): never
@@ -83,7 +83,7 @@ $message = mango_form_value('contact-message', 2000);
 $source = mango_form_value('contact-source', 200);
 $consent = mango_form_value('contact-consent', 10);
 
-if (mb_strlen($name) < 2) {
+if ((function_exists('mb_strlen') ? mb_strlen($name) : strlen($name)) < 2) {
     mango_form_error('contact-name', 'Please enter your name.', $isAjax);
 }
 
