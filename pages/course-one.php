@@ -86,22 +86,22 @@
                 'courses' => [
                     ['Linux', 'linux-course-jaipur-mango-engineers.webp', 'Linux command line, administration foundations and practical server skills.', 'linux-course-jaipur.html'],
                     ['AWS Cloud', 'aws-course-jaipur-mango-engineers.webp', 'Cloud concepts and AWS-oriented infrastructure foundations.', 'aws-course-jaipur.html'],
-                    ['Microsoft Azure', 'microsoft-azure-course-jaipur-mango-engineers.webp', 'Azure cloud services and infrastructure foundations.'],
+                    ['Microsoft Azure', 'microsoft-azure-course-jaipur-mango-engineers.webp', 'Azure cloud services and infrastructure foundations.', 'microsoft-azure-course-jaipur.html'],
                     ['DevOps', 'devops-course-jaipur-mango-engineers.webp', 'DevOps concepts, automation workflow, CI/CD thinking and deployment practices.', 'devops-course-jaipur.html'],
-                    ['Docker', 'docker-course-jaipur-mango-engineers.webp', 'Container concepts and application packaging with Docker.'],
-                    ['Kubernetes', 'kubernetes-course-jaipur-mango-engineers.webp', 'Container orchestration concepts and Kubernetes foundations.'],
+                    ['Docker', 'docker-course-jaipur-mango-engineers.webp', 'Container concepts and application packaging with Docker.', 'docker-course-jaipur.html'],
+                    ['Kubernetes', 'kubernetes-course-jaipur-mango-engineers.webp', 'Container orchestration concepts and Kubernetes foundations.', 'kubernetes-course-jaipur.html'],
                 ],
             ],
             'security-design-marketing' => [
                 'title' => 'Cyber Security, Design & Digital Growth',
                 'description' => 'Specialised learning paths beyond core software engineering.',
                 'courses' => [
-                    ['Ethical Hacking', 'ethical-hacking-course-jaipur-mango-engineers.webp', 'Security foundations, ethical testing concepts and defensive awareness.'],
+                    ['Ethical Hacking', 'ethical-hacking-course-jaipur-mango-engineers.webp', 'Security foundations, ethical testing concepts and defensive awareness.', 'ethical-hacking-course-jaipur.html'],
                     ['CEH Preparation', 'ceh-course-jaipur-mango-engineers.webp', 'Structured learning around ethical hacking concepts relevant to CEH preparation.'],
-                    ['UI/UX Design', 'ui-ux-design-course-jaipur-mango-engineers.webp', 'User experience, interface design and product design workflow.'],
+                    ['UI/UX Design', 'ui-ux-design-course-jaipur-mango-engineers.webp', 'User experience, interface design and product design workflow.', 'ui-ux-design-course-jaipur.html'],
                     ['Figma', 'figma-course-jaipur-mango-engineers.webp', 'Interface design, prototyping and collaborative design workflow in Figma.'],
                     ['Graphic Design', 'graphic-design-course-jaipur-mango-engineers.webp', 'Visual communication and practical design foundations.'],
-                    ['Digital Marketing', 'social-media-marketing-course-jaipur-mango-engineers.webp', 'SEO, social media, paid advertising and digital campaign foundations.'],
+                    ['Digital Marketing', 'social-media-marketing-course-jaipur-mango-engineers.webp', 'SEO, social media, paid advertising and digital campaign foundations.', 'digital-marketing-course-jaipur.html'],
                 ],
             ],
         ];
