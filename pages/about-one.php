@@ -1,445 +1,158 @@
+<?php $site = mango_site(); ?>
 
-        <!--=====================================-->
-        <!--=       Breadcrumb Area Start      =-->
-        <!--=====================================-->
-
-
-        <div class="edu-breadcrumb-area breadcrumb-style-2 bg-image bg-image--19">
+        <div class="edu-breadcrumb-area">
             <div class="container">
                 <div class="breadcrumb-inner">
                     <div class="page-title">
-                        <h1 class="title">A Large Range of Course Learning Paths</h1>
+                        <h1 class="title">About Mango Engineers</h1>
                     </div>
                     <ul class="edu-breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="separator"><i class="icon-angle-right"></i></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="separator"><i class="icon-angle-right"></i></li>
-                        <li class="breadcrumb-item active" aria-current="page">About Us 1</li>
+                        <li class="breadcrumb-item active" aria-current="page">About</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!--=====================================-->
-        <!--=       About Area Start            =-->
-        <!--=====================================-->
-        <div class="section-gap-large edu-about-area about-style-7">
+        <section class="section-gap-large edu-about-area about-style-7">
             <div class="container">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-5">
+                    <div class="col-lg-6">
                         <div class="about-content">
-                            <div class="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <span class="pre-title">About Us</span>
-                                <h2 class="title">We Providing The <span class="color-secondary">Best Quality</span> Online Courses.</h2>
+                            <div class="section-title section-left">
+                                <span class="pre-title">Technology Training in Jaipur</span>
+                                <h2 class="title">Practical Learning for Programming, Software, Data, AI and Cloud Skills</h2>
                                 <span class="shape-line"><i class="icon-19"></i></span>
-                                <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod ex tempor incididunt labore dolore magna aliquaenim ad minim.</p>
+                                <p>Mango Engineers is a technology training institute in Jaipur. The learning catalogue covers programming, full stack development, data and analytics, artificial intelligence, cloud and DevOps, along with related technology skill paths.</p>
+                                <p>Training is organised around concept clarity, guided practice, assignments and project work. Course availability, batch timing and learning mode can vary by program, so learners should confirm the current batch before enrolment.</p>
                             </div>
-                            <ul class="features-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <li>Flexible Classes</li>
-                                <li>Offline Classe Mode</li>
-                                <li>Educator Support</li>
+                            <ul class="features-list">
+                                <li>Programming and software-development foundations</li>
+                                <li>Frontend, backend and full stack learning paths</li>
+                                <li>Data analytics, Data Science, AI and Machine Learning pathways</li>
+                                <li>Linux, AWS, cloud and DevOps foundations</li>
                             </ul>
+                            <div class="mt--30">
+                                <a href="course-one.html" class="edu-btn">Explore Courses <i class="icon-4"></i></a>
+                                <a href="contact-us.html" class="edu-btn btn-border">Talk to an Advisor</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <div class="about-image-gallery">
-                            <img class="main-img-1" src="assets/images/about/about-11.webp" alt="About Image">
-                            <img class="main-img-2" src="assets/images/about/about-12.webp" data-sal-delay="150" data-sal="slide-down" data-sal-duration="800" alt="About Image">
-                            <ul class="shape-group">
-                                <li class="shape-1 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                                    <img data-depth="2" src="assets/images/about/shape-38.png" alt="Shape">
-                                </li>
-                                <li class="shape-2 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                                    <img data-depth="-2" src="assets/images/about/shape-37.png" alt="Shape">
-                                </li>
-                                <li class="shape-3 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                                    <img data-depth="-1.8" src="assets/images/about/shape-04.png" alt="Shape">
-                                </li>
-                                <li class="shape-4 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                                    <img src="assets/images/counterup/shape-02.png" alt="Shape">
-                                </li>
-                            </ul>
+                            <img class="main-img-1" src="assests/Mango%20engineers%20images/java-full-stack-course-jaipur-mango-engineers.webp" alt="Software development training at Mango Engineers Jaipur">
                         </div>
                     </div>
                 </div>
             </div>
-            <ul class="shape-group">
-                <li class="shape-1" data-sal-delay="500" data-sal="fade" data-sal-duration="200"></li>
-            </ul>
-        </div>
-        <!--=====================================-->
-        <!--=       Brand Area Start            =-->
-        <!--=====================================-->
-        <!-- Start Brand Area  -->
-        <div class="edu-brand-area brand-area-4 gap-lg-bottom-equal">
-            <div class="container">
-                <div class="brand-grid-wrap brand-style-2">
-                    <div class="brand-grid">
-                        <img src="assets/images/brand/brand-01.png" alt="Brand Logo">
-                    </div>
-                    <div class="brand-grid">
-                        <img src="assets/images/brand/brand-02.png" alt="Brand Logo">
-                    </div>
-                    <div class="brand-grid">
-                        <img src="assets/images/brand/brand-03.png" alt="Brand Logo">
-                    </div>
-                    <div class="brand-grid">
-                        <img src="assets/images/brand/brand-04.png" alt="Brand Logo">
-                    </div>
-                    <div class="brand-grid">
-                        <img src="assets/images/brand/brand-05.png" alt="Brand Logo">
-                    </div>
-                    <div class="brand-grid">
-                        <img src="assets/images/brand/brand-06.png" alt="Brand Logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Brand Area  -->
-        <!--=====================================-->
-        <!--=       Why Choose Area Start       =-->
-        <!--=====================================-->
-        <!-- Start Why Choose Area  -->
-        <section class="why-choose-area-2 section-gap-large">
-            <div class="container edublink-animated-shape">
-                <div class="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                    <span class="pre-title">Why choose edublink</span>
-                    <h2 class="title">The Best <span class="color-secondary">Beneficial</span> Side <br> of EduBlink</h2>
-                    <span class="shape-line"><i class="icon-19"></i></span>
-                </div>
-                <div class="row g-5">
-                    <div class="col-lg-4" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="why-choose-box features-box color-primary-style">
-                            <div class="icon">
-                                <i class="icon-45"></i>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">High Quality Courses</h4>
-                                <p>Lorem ipsum dolor sit amet conset ur elit sed eiusmod ex tempor inc labore dolore magna.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="why-choose-box features-box color-secondary-style">
-                            <div class="icon">
-                                <i class="icon-46"></i>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Life Time Access</h4>
-                                <p>Lorem ipsum dolor sit amet conset ur elit sed eiusmod ex tempor inc labore dolore magna.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="why-choose-box features-box color-extra08-style">
-                            <div class="icon">
-                                <i class="icon-47"></i>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Expert Instructors</h4>
-                                <p>Lorem ipsum dolor sit amet conset ur elit sed eiusmod ex tempor inc labore dolore magna.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="shape-group">
-                    <li class="shape-5" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                        <span></span>
-                    </li>
-                </ul>
-            </div>
-            <ul class="shape-group">
-                <li class="shape-1 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                    <span data-depth="1"></span>
-                </li>
-                <li class="shape-2 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                    <img data-depth="-2" src="assets/images/about/shape-13.png" alt="shape">
-                </li>
-                <li class="shape-3 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                    <span data-depth="-1"></span>
-                </li>
-                <li class="shape-4 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                    <img data-depth="2" src="assets/images/about/shape-40.png" alt="shape">
-                </li>
-            </ul>
         </section>
-        <!-- End Why Choose Area  -->
-        <!--=====================================-->
-        <!--=       Testimonial Area Start      =-->
-        <!--=====================================-->
-        <!-- Start Testimonial Area  -->
-        <div class="testimonial-area-5 gap-lg-bottom-equal">
+
+        <section class="why-choose-area-2 section-gap-large bg-lighten01">
             <div class="container">
-                <div class="row g-lg-5">
-                    <div class="col-lg-5">
-                        <div class="testimonial-heading-area">
-                            <div class="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <span class="pre-title">Testimonials</span>
-                                <h2 class="title">What Our Students Have To Say</h2>
-                                <span class="shape-line"><i class="icon-19"></i></span>
-                                <p>Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod tempor incididunt labore dolore magna aliquaenim ad minim.</p>
-                                <a href="#" class="edu-btn btn-large">View All<i class="icon-4"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="swiper-testimonial-slider-wrapper swiper testimonial-coverflow">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="testimonial-grid">
-                                        <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-01.png" alt="Testimonial">
-                                            <span class="qoute-icon"><i class="icon-26"></i></span>
-
-                                        </div>
-                                        <div class="content">
-                                            <p>Lorem ipsum dolor amet consec tur elit adicing sed do usmod zx tempor enim minim veniam quis nostrud exer citation.</p>
-                                            <div class="rating-icon">
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                            </div>
-                                            <h5 class="title">Ray Sanchez</h5>
-                                            <span class="subtitle">Student</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-grid">
-                                        <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-02.png" alt="Testimonial">
-                                            <span class="qoute-icon"><i class="icon-26"></i></span>
-
-                                        </div>
-                                        <div class="content">
-                                            <p>Lorem ipsum dolor amet consec tur elit adicing sed do usmod zx tempor enim minim veniam quis nostrud exer citation.</p>
-                                            <div class="rating-icon">
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                            </div>
-                                            <h5 class="title">Thomas Lopez</h5>
-                                            <span class="subtitle">Designer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-grid">
-                                        <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-03.png" alt="Testimonial">
-                                            <span class="qoute-icon"><i class="icon-26"></i></span>
-
-                                        </div>
-                                        <div class="content">
-                                            <p>Lorem ipsum dolor amet consec tur elit adicing sed do usmod zx tempor enim minim veniam quis nostrud exer citation.</p>
-                                            <div class="rating-icon">
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                            </div>
-                                            <h5 class="title">Amber Page</h5>
-                                            <span class="subtitle">Developer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-grid">
-                                        <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-04.png" alt="Testimonial">
-                                            <span class="qoute-icon"><i class="icon-26"></i></span>
-
-                                        </div>
-                                        <div class="content">
-                                            <p>Lorem ipsum dolor amet consec tur elit adicing sed do usmod zx tempor enim minim veniam quis nostrud exer citation.</p>
-                                            <div class="rating-icon">
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                                <i class="icon-23"></i>
-                                            </div>
-                                            <h5 class="title">Robert Tapp</h5>
-                                            <span class="subtitle">Content Creator</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
+                <div class="section-title section-center">
+                    <span class="pre-title">Learning Approach</span>
+                    <h2 class="title">Learn Concepts, Practise Skills and Build Projects</h2>
+                    <span class="shape-line"><i class="icon-19"></i></span>
+                    <p>Mango Engineers focuses on structured skill development instead of unsupported placement or outcome guarantees.</p>
                 </div>
-            </div>
-        </div>
-        <!-- End Testimonial Area  -->
-        <!--=====================================-->
-        <!--=       CounterUp Area Start        =-->
-        <!--=====================================-->
-        <div class="counterup-area-8 gap-lg-bottom-equal">
-            <div class="container">
                 <div class="row g-5">
-                    <div class="col-lg-3 col-sm-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-counterup counterup-style-4">
-                            <div class="icon primary-color">
-                                <i class="icon-48"></i>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="why-choose-box features-box color-primary-style h-100">
+                            <div class="icon"><i class="icon-45"></i></div>
+                            <div class="content">
+                                <h4 class="title">Guided Foundations</h4>
+                                <p>Start with the concepts and tools required for the selected technology path, then progress into practical exercises.</p>
                             </div>
-                            <h2 class="counter-item count-number">
-                                <span class="odometer" data-odometer-final="29.3">.</span><span>K</span>
-                            </h2>
-                            <h6 class="title">Student Enrolled</h6>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-counterup counterup-style-4">
-                            <div class="icon secondary-color">
-                                <i class="icon-47"></i>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="why-choose-box features-box color-secondary-style h-100">
+                            <div class="icon"><i class="icon-46"></i></div>
+                            <div class="content">
+                                <h4 class="title">Hands-On Practice</h4>
+                                <p>Assignments and guided implementation help learners turn theory into code, analysis, applications or deployment workflows.</p>
                             </div>
-                            <h2 class="counter-item count-number">
-                                <span class="odometer" data-odometer-final="32.4">.</span><span>K</span>
-                            </h2>
-                            <h6 class="title">Class Completed</h6>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-counterup counterup-style-4">
-                            <div class="icon extra08-color">
-                                <i class="icon-49"></i>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="why-choose-box features-box color-extra08-style h-100">
+                            <div class="icon"><i class="icon-47"></i></div>
+                            <div class="content">
+                                <h4 class="title">Project-Oriented Learning</h4>
+                                <p>Applicable programs include project work whose depth depends on the course, learner level and current batch structure.</p>
                             </div>
-                            <h2 class="counter-item count-number">
-                                <span class="odometer" data-odometer-final="100">.</span><span>%</span>
-                            </h2>
-                            <h6 class="title">Satisfaction Rate</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-counterup counterup-style-4">
-                            <div class="icon extra05-color">
-                                <i class="icon-50"></i>
-                            </div>
-                            <h2 class="counter-item count-number">
-                                <span class="odometer" data-odometer-final="354">.</span><span>+</span>
-                            </h2>
-                            <h6 class="title">Top Instructors</h6>
                         </div>
                     </div>
                 </div>
             </div>
-            <ul class="shape-group">
-                <li class="shape-1" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                    <img src="assets/images/others/map-shape-3.png" alt="Shape">
-                </li>
-            </ul>
-        </div>
-        <!--=====================================-->
-        <!--=        Team Area Start       	    =-->
-        <!--=====================================-->
-        <!-- Start Team Area  -->
-        <div class="edu-team-area team-area-5 section-gap-large">
+        </section>
+
+        <section class="edu-course-area section-gap-equal">
             <div class="container">
-                <div class="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                    <span class="pre-title">Instructors</span>
-                    <h2 class="title">Course Instructors</h2>
+                <div class="section-title section-center">
+                    <span class="pre-title">What You Can Learn</span>
+                    <h2 class="title">Technology Learning Paths</h2>
                     <span class="shape-line"><i class="icon-19"></i></span>
                 </div>
                 <div class="row g-5">
-                    <!-- Start Instructor Grid  -->
-                    <div class="col-lg-4 col-md-6" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-team-grid team-style-2">
-                            <div class="inner">
-                                <div class="thumbnail-wrap">
-                                    <div class="thumbnail">
-                                        <a href="team-details.html">
-                                            <img src="assets/images/team/team-05.webp" alt="team images">
-                                        </a>
-                                    </div>
-                                    <ul class="team-share-info">
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"><a href="team-details.html">Jane Seymour</a></h5>
-                                    <span class="designation">UI Designer</span>
-                                    <p>Consectetur adipisicing elit, sed do eius mod tempor incididunt</p>
-                                </div>
+                    <?php foreach ([
+                        ['Programming & Full Stack', 'C, C++, Java, Python, JavaScript, frontend, backend and full stack development pathways.', 'course-one.html#programming'],
+                        ['Data, Analytics & AI', 'SQL, Excel, Power BI, Data Analytics, Data Science, Machine Learning, Artificial Intelligence and Generative AI.', 'course-one.html#data-ai'],
+                        ['Cloud & DevOps', 'Linux, AWS and related cloud, container and DevOps learning foundations.', 'course-one.html#cloud-devops'],
+                    ] as $path): ?>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="features-box features-style-7 h-100">
+                            <div class="content">
+                                <h4 class="title"><?= mango_e($path[0]) ?></h4>
+                                <p><?= mango_e($path[1]) ?></p>
+                                <a href="<?= mango_e($path[2]) ?>" class="edu-btn btn-small btn-border">View Learning Path</a>
                             </div>
                         </div>
                     </div>
-                    <!-- End Instructor Grid  -->
-                    <!-- Start Instructor Grid  -->
-                    <div class="col-lg-4 col-md-6" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-team-grid team-style-2">
-                            <div class="inner">
-                                <div class="thumbnail-wrap">
-                                    <div class="thumbnail">
-                                        <a href="team-details.html">
-                                            <img src="assets/images/team/team-06.webp" alt="team images">
-                                        </a>
-                                    </div>
-                                    <ul class="team-share-info">
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"><a href="team-details.html">Edward Norton</a></h5>
-                                    <span class="designation">Web Developer</span>
-                                    <p>Consectetur adipisicing elit, sed do eius mod tempor incididunt</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Instructor Grid  -->
-                    <!-- Start Instructor Grid  -->
-                    <div class="col-lg-4 col-md-6" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-team-grid team-style-2">
-                            <div class="inner">
-                                <div class="thumbnail-wrap">
-                                    <div class="thumbnail">
-                                        <a href="team-details.html">
-                                            <img src="assets/images/team/team-07.webp" alt="team images">
-                                        </a>
-                                    </div>
-                                    <ul class="team-share-info">
-                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                        <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"><a href="team-details.html">Penelope Cruz</a></h5>
-                                    <span class="designation">Digital Marketer</span>
-                                    <p>Consectetur adipisicing elit, sed do eius mod tempor incididunt</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Instructor Grid  -->
+                    <?php endforeach; ?>
                 </div>
             </div>
-            <ul class="shape-group">
-                <li class="shape-1 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                    <span data-depth=".8"></span>
-                </li>
-                <li class="shape-2 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                    <img data-depth="-2" src="assets/images/about/shape-13.png" alt="shape">
-                </li>
-                <li class="shape-3" data-sal-delay="500" data-sal="fade" data-sal-duration="200">
-                    <span></span>
-                </li>
-            </ul>
+        </section>
+
+        <section class="edu-section-gap bg-lighten01">
+            <div class="container">
+                <div class="section-title section-center">
+                    <span class="pre-title">Learn in Jaipur</span>
+                    <h2 class="title">Mango Engineers Locations</h2>
+                    <span class="shape-line"><i class="icon-19"></i></span>
+                    <p>Contact the team before visiting to confirm the course, batch timing and learning location.</p>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <?php foreach ($site['branches'] as $branch): ?>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="features-box features-style-7 h-100">
+                            <div class="content">
+                                <h4 class="title"><?= mango_e($branch['name']) ?></h4>
+                                <p><?= mango_e($branch['full_address']) ?></p>
+                                <a href="<?= mango_e($branch['map']) ?>" class="edu-btn btn-small btn-border" target="_blank" rel="noopener">Get Directions</a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
+
+        <div class="home-one-cta-two cta-area-1 section-gap-equal">
+            <div class="container">
+                <div class="home-one-cta edu-cta-box bg-image">
+                    <div class="inner">
+                        <div class="content">
+                            <span class="subtitle">Need a learning roadmap?</span>
+                            <h3 class="title"><a href="contact-us.html">Discuss Your Goal With Mango Engineers</a></h3>
+                            <p>Ask about the current syllabus, batch, fees, learning mode and suitable starting point for your background.</p>
+                        </div>
+                        <div class="content">
+                            <span class="subtitle">Call</span>
+                            <h3 class="title"><a href="tel:<?= mango_e($site['phone_href']) ?>"><?= mango_e($site['phone_display']) ?></a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- End Team Area  -->
-        <!--=====================================-->
-        <!--=        Footer Area Start       	=-->
-        <!--=====================================-->
-        <!-- Start Footer Area  -->
-        
