@@ -68,6 +68,9 @@ function mango_page_definitions(): array
         'team-three' => ['name' => 'Mango Engineers Instructors – Layout 3', 'description' => 'Browse Mango Engineers instructor and trainer profiles in an alternative team presentation.', 'schema_type' => 'CollectionPage', 'robots' => 'noindex,follow'],
         'terms-condition' => ['name' => 'Terms & Conditions', 'description' => 'Read the terms and conditions governing use of the Mango Engineers website and related online information.', 'schema_type' => 'WebPage', 'robots' => 'index,follow'],
         'wishlist' => ['name' => 'Saved Training Items', 'description' => 'View training-related items saved for later where Mango Engineers account features are enabled.', 'schema_type' => 'WebPage', 'robots' => 'noindex,nofollow'],
+        'java-course-jaipur' => ['name' => 'Java Course in Jaipur', 'description' => 'Learn Core Java, Advanced Java, JDBC, Hibernate, Spring and Spring Boot with practical projects, mentor support and career preparation at Mango Engineers Jaipur.', 'schema_type' => 'ItemPage', 'robots' => 'index,follow', 'entity_type' => 'Course'],
+        'python-course-jaipur' => ['name' => 'Python Course in Jaipur', 'description' => 'Learn Python programming in Jaipur with practical coding, assignments and a foundation for backend development, automation, data analytics, data science and AI.', 'schema_type' => 'ItemPage', 'robots' => 'index,follow', 'entity_type' => 'Course'],
+        'full-stack-development-course-jaipur' => ['name' => 'Full Stack Development Course in Jaipur', 'description' => 'Learn frontend development, advanced JavaScript, Node.js, APIs, SQL and NoSQL through practical full stack projects at Mango Engineers Jaipur.', 'schema_type' => 'ItemPage', 'robots' => 'index,follow', 'entity_type' => 'Course'],
     ];
 }
 
