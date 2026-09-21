@@ -48,5 +48,6 @@ jobs:
             echo "No image changes to commit."
           else
             git commit -m "Replace Mango Engineers contact number and add JPG copies"
+            git pull --rebase origin main
             git push origin main
           fi
