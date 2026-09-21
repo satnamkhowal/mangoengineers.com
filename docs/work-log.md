@@ -155,3 +155,24 @@ State:
 - Deployment: not verified.
 - Lead delivery: not verified.
 - Task remains REVIEW until an authorized synthetic enquiry reaches the configured inbox on the deployed host.
+
+## 2026-09-22 — Integration cycle: B004/B005, lead form, demo cleanup and production smoke test
+
+Reviewed/integrated state:
+- B004 is integrated on main at c781c68dd2cd5d2a97cf7ecc3d02240f1aec0e85; PHP architecture check passed.
+- B005 is integrated on main at 631edf3dbfeb67861bbafaafb32068fb0a019789; six course page bodies were checked against the worker branch and referenced images exist.
+- ME-LEAD-001 code is integrated on main, including central contact email, validated contact form, local PHP mail handler and the self-contained consent follow-up at 33a70b9fa9bbfac5a6096ad7b0f3df170cfd741a.
+- About page demo/testimonial/counter/instructor content was removed in repository commit aaff04e31430d9f3dcfd419076d461de2faf2886.
+- Duplicate PRs #9, #13 and #14 were closed after their scopes were already represented on current main.
+
+Production smoke test:
+- Homepage responds with the newer Mango Engineers homepage.
+- course-one.html returns HTTP 500.
+- contact-us.html returns HTTP 500.
+- java-course-jaipur.html returns HTTP 500.
+- about-one.html still serves the old EduBlink/Lorem Ipsum/testimonial/instructor content, so the repository About cleanup is not deployed.
+- Repository PHP architecture checks are passing.
+- No production deployment workflow/config was found under .github/workflows.
+
+Decision:
+Production is not LIVE VERIFIED. ME-PROD-500-001 and ME-DEPLOY-001 are P0 blockers. Do not mark the lead system or new course pages live until the production host is synchronised and smoke-tested.
