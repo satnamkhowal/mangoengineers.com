@@ -35,8 +35,12 @@ function mango_tutorial_render_head(array $meta): void
         'assets/css/vendor/icomoon.css',
         'assets/css/vendor/remixicon.css',
         'assets/css/vendor/magnifypopup.min.css',
+        'assets/css/vendor/odometer.min.css',
+        'assets/css/vendor/lightbox.min.css',
         'assets/css/vendor/animation.min.css',
+        'assets/css/vendor/jqueru-ui-min.css',
         'assets/css/vendor/swiper-bundle.min.css',
+        'assets/css/vendor/tipped.min.css',
         'assets/css/app.css',
         'assets/css/mango-overrides.css',
         'tutorial/assets/tutorial.css',
@@ -50,7 +54,9 @@ function mango_tutorial_render_head(array $meta): void
             '</script>';
     }
 
-    echo '</head><body class="sticky-header"><div id="main-wrapper" class="main-wrapper">';
+    echo '</head><body class="sticky-header">';
+    echo '<div id="edublink-preloader"><div class="loading-spinner"><div class="preloader-spin-1"></div><div class="preloader-spin-2"></div></div><div class="preloader-close-btn-wraper"><span class="btn btn-primary preloader-close-btn">Cancel Preloader</span></div></div>';
+    echo '<div id="main-wrapper" class="main-wrapper">';
 }
 
 function mango_tutorial_render_start(array $meta): void
