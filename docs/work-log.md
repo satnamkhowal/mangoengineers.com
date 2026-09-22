@@ -212,3 +212,33 @@ Implementation tasks queued on main:
 Coordination:
 - ME-SEO-URL-001 is already IN_PROGRESS under worker-ai-seo-url-01; this research worker did not overwrite or claim it.
 - no production code or deployment change was made in this cycle.
+
+
+## 2026-09-22 — ME-TUTORIAL-001 tutorial library B001
+
+Branch: `build/tutorial-library-b001`  
+Status: REVIEW
+
+Research completed before implementation:
+- Reviewed GeeksforGeeks, TutorialsPoint, Scaler Topics, StudyTonight and PrepInsta for tutorial information architecture, progression, examples, practice and internal-link patterns.
+- Cross-checked technical learning structure against official Python, Java, MDN JavaScript and PostgreSQL documentation.
+- Recorded findings and SEO intent rules in `docs/tutorial-research-2026-09-22.md`.
+
+Implemented:
+- Added a physical `tutorial/` section without replacing existing blog or commercial course URLs.
+- Added clean nested routing: `/tutorial/{technology}/` and `/tutorial/{technology}/{chapter}/`.
+- Added tutorial-specific reusable template and CSS while reusing the existing Mango Engineers shared header/footer and theme assets.
+- Added searchable tutorial hub with published tracks plus the expansion roadmap mapped from the current course catalogue.
+- Added full first-batch tracks for Python, Java, JavaScript, SQL and Linux.
+- Each track contains six original chapters with concept explanations, examples, practice tasks, key takeaways, previous/next navigation and a secondary link to the relevant Mango Engineers course page.
+- Added TechArticle / CollectionPage / ItemList / Breadcrumb structured data for tutorial surfaces.
+- Unfinished future topics remain a roadmap only; they are not emitted as indexable placeholder pages.
+
+Coordination:
+- Shared `includes/header.php` was not modified from this worker branch.
+- Navigation change from Resources > Free Tutorials to `/tutorial/` is queued for coordinator integration.
+- Production deployment/live verification is not claimed; existing deployment/runtime blockers remain separate.
+
+QA notes:
+- All new files were fetched back from the branch and checked for expected paths/content and merge-conflict markers.
+- Existing GitHub PHP Architecture Check will lint top-level tutorial PHP files on the pull request; nested helper/data PHP remains subject to reviewer syntax inspection because the current workflow uses `find -maxdepth 2`.
