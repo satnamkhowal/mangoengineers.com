@@ -241,4 +241,4 @@ Coordination:
 
 QA notes:
 - All new files were fetched back from the branch and checked for expected paths/content and merge-conflict markers.
-- Existing GitHub PHP Architecture Check will lint top-level tutorial PHP files on the pull request; nested helper/data PHP remains subject to reviewer syntax inspection because the current workflow uses `find -maxdepth 2`.
+- Tutorial helper/data PHP files were moved to `tutorial/template.php` and `tutorial/tutorials.php` so the existing `find -maxdepth 2` CI lint covers the complete tutorial PHP implementation.
