@@ -242,3 +242,17 @@ Coordination:
 QA notes:
 - All new files were fetched back from the branch and checked for expected paths/content and merge-conflict markers.
 - Tutorial helper/data PHP files were moved to `tutorial/template.php` and `tutorial/tutorials.php` so the existing `find -maxdepth 2` CI lint covers the complete tutorial PHP implementation.
+
+
+### ME-TUTORIAL-001 integration update
+
+Coordinator integration completed after PR #20 passed PHP Architecture Check.
+
+- Tutorial B001 was squash-merged to `main` at `fcea96e4393c16571838174aeed9aa0fe74796f8`.
+- Published repository tutorial foundation covers Python, Java, JavaScript, SQL and Linux, with six chapters per track.
+- Shared Resources > Free Tutorials navigation now points to `/tutorial/`.
+- Shared footer now links to the tutorial hub.
+- Tutorial sitemap inclusion remains blocked on the approved canonical URL set from ME-SEO-URL-001.
+- Production deployment/live rendering is still not claimed because ME-DEPLOY-001 / ME-PROD-500-001 remain separate blockers.
+
+Status: B001 IMPLEMENTED + MERGED + NAVIGATION INTEGRATED in repository. Production LIVE VERIFIED: NO.
