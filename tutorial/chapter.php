@@ -10,7 +10,7 @@ $tracks = mango_tutorial_tracks();
 
 if (!isset($tracks[$slug]['chapters'][$chapterSlug])) {
     http_response_code(404);
-    header('Location: /tutorial/');
+    require __DIR__ . '/../404.php';
     exit;
 }
 
