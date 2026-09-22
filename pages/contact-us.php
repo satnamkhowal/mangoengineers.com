@@ -145,3 +145,14 @@ $sendError = isset($_GET['error']) && $_GET['error'] === '1';
                 </div>
             </div>
         </section>
+
+<section class="edu-section-gap bg-color-white">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="pre-title">Jaipur Visitor Resource</span>
+            <h2 class="title">Need travel help while visiting Jaipur?</h2>
+            <p>For local sightseeing, cab travel and Rajasthan trip planning, explore <a href="https://swiggywala.com/" target="_blank" rel="noopener">Swiggy Wala Jaipur tours and travel services</a>.</p>
+        </div>
+    </div>
+</section>
+
