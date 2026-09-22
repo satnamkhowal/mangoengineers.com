@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/includes/template.php';
-require_once __DIR__ . '/data/tutorials.php';
+require_once __DIR__ . '/template.php';
+require_once __DIR__ . '/tutorials.php';
 
 $tracks = mango_tutorial_tracks();
 $planned = mango_tutorial_planned_tracks();
