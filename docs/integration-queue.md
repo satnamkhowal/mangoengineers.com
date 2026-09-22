@@ -42,6 +42,6 @@ Dependency: IQ-003 approved canonical URL set.
 
 ### IQ-006 — Tutorial navigation and discovery integration
 Source: ME-TUTORIAL-001
-State: PENDING_REVIEW
-Shared files: includes/header.php; future sitemap.xml; contextual links from relevant course/resource pages
-Requested change: after the tutorial PR is approved/merged, change Resources > Free Tutorials from `blog-standard.html` to `/tutorial/`. Add selective contextual links from relevant course pages only after canonical/URL work is stable. Include tutorial hub/topic/chapter URLs in sitemap generation only after ME-SEO-URL-001 approves the canonical set.
+State: COMPLETED
+Shared files: includes/header.php; includes/footer.php; future sitemap.xml; contextual links from relevant course/resource pages
+Completed integration: Resources > Free Tutorials now points to `/tutorial/`, and the footer includes a Free Tutorials link. Tutorial hub/topic/chapter sitemap inclusion remains intentionally deferred until ME-SEO-URL-001 approves the canonical set; selective commercial-page contextual links can be added in later tutorial batches after that URL decision.
