@@ -242,7 +242,7 @@ $navigation = [
             ['label' => 'Blog', 'href' => 'blog-standard.html'],
             ['label' => 'Interview Questions', 'href' => 'blog-standard.html'],
             ['label' => 'Career Guides', 'href' => 'blog-standard.html'],
-            ['label' => 'Free Tutorials', 'href' => 'blog-standard.html'],
+            ['label' => 'Free Tutorials', 'href' => '/tutorial/'],
             ['label' => 'Events & Webinars', 'href' => 'event-grid.html'],
         ],
     ],
