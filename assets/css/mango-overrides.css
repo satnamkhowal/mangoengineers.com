@@ -591,3 +591,31 @@ textarea {
         font-size: 22px;
     }
 }
+
+/* === Mobile-first stability pass — 2026-09-22 === */
+html { overflow-x: hidden; }
+body { overflow-x: clip; -webkit-text-size-adjust: 100%; }
+img, svg, video, canvas, iframe { max-width: 100%; height: auto; }
+@media (max-width: 991.98px) {
+  .container, .container-fluid { padding-left: 16px !important; padding-right: 16px !important; }
+  .edu-header .header-mainmenu, .edu-header .header-navbar { min-height: 64px; }
+  .edu-header .header-brand, .edu-header .logo { min-width: 0; }
+  .edu-header .header-brand img, .edu-header .logo img { width: min(180px, 54vw); height: auto; }
+  .edu-header .hamburger-menu, .edu-header .mobile-menu-toggle, .edu-header button[aria-expanded] {
+    min-width: 44px; min-height: 44px;
+  }
+  .edu-header .mainmenu, .edu-header .submenu { max-width: 100%; }
+  .edu-header .mainmenu a, .edu-header .submenu a { min-height: 44px; white-space: normal; overflow-wrap: anywhere; }
+  .row > [class*="col-"] { min-width: 0; }
+  .edu-course-area, .course-details-area, .edu-section-gap { min-width: 0; }
+  table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+@media (max-width: 767.98px) {
+  body { font-size: 16px; }
+  input, select, textarea, button { font-size: 16px !important; max-width: 100%; }
+  .edu-section-gap, .edu-section-gapTop, .edu-section-gapBottom { padding-top: 48px !important; padding-bottom: 48px !important; }
+  h1, .title, .hero-title { overflow-wrap: anywhere; }
+  .edu-breadcrumb-area h1, .banner-content h1 { font-size: clamp(2rem, 9vw, 2.8rem) !important; line-height: 1.08 !important; }
+  .edu-btn, .btn, button, input[type="submit"] { min-height: 44px; }
+  .preloader-close-btn { min-height: 44px; display: inline-flex; align-items: center; }
+}
