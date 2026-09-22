@@ -58,6 +58,7 @@ $site = mango_site();
                         <div class="inner">
                             <ul class="footer-link link-hover">
                                 <li><a href="blog-standard.html">Blog</a></li>
+                                <li><a href="/tutorial/">Free Tutorials</a></li>
                                 <li><a href="faq.html">FAQ</a></li>
                                 <li><a href="contact-us.html">Contact</a></li>
                                 <li><a href="privacy-policy.html">Privacy Policy</a></li>
