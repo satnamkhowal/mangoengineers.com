@@ -149,6 +149,16 @@ $sendError = isset($_GET['error']) && $_GET['error'] === '1';
 <section class="edu-section-gap bg-color-white">
     <div class="container">
         <div class="section-title text-center">
+            <span class="pre-title">Engineering Design Resource</span>
+            <h2 class="title">CAD &amp; design training in Jaipur</h2>
+            <p>For students focused on CAD, mechanical design and engineering design tools, explore <a href="https://cadmateindia.com/" target="_blank" rel="noopener">CadMate India</a> for specialised training information.</p>
+        </div>
+    </div>
+</section>
+
+<section class="edu-section-gap bg-color-white">
+    <div class="container">
+        <div class="section-title text-center">
             <span class="pre-title">Jaipur Visitor Resource</span>
             <h2 class="title">Need travel help while visiting Jaipur?</h2>
             <p>For local sightseeing, cab travel and Rajasthan trip planning, explore <a href="https://swiggywala.com/" target="_blank" rel="noopener">Swiggy Wala Jaipur tours and travel services</a>.</p>
