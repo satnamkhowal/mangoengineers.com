@@ -619,3 +619,274 @@ img, svg, video, canvas, iframe { max-width: 100%; height: auto; }
   .edu-btn, .btn, button, input[type="submit"] { min-height: 44px; }
   .preloader-close-btn { min-height: 44px; display: inline-flex; align-items: center; }
 }
+
+/* --------------------------------------------------------------------------
+   Approved information architecture: desktop mega menu + mobile accordion
+   2026-09-22
+   -------------------------------------------------------------------------- */
+
+.edu-header.header-style-7 .header-navbar {
+    position: relative;
+}
+
+.edu-header.header-style-7 .mango-primary-menu > li > a {
+    white-space: nowrap;
+}
+
+.edu-header.header-style-7 .mainmenu-nav .mainmenu > li > a {
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 14px;
+}
+
+.edu-header.header-style-7 .mainmenu-nav .mainmenu > li > .submenu:not(.mango-mega-menu) {
+    width: 285px;
+    max-height: min(70vh, 620px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    border-radius: 0 0 12px 12px;
+}
+
+.edu-header.header-style-7 .mainmenu-nav .mainmenu > li > .submenu:not(.mango-mega-menu) > li > a {
+    white-space: normal;
+    line-height: 1.4;
+}
+
+@media only screen and (min-width: 1200px) {
+    .edu-header.header-style-7 .header-mainnav,
+    .edu-header.header-style-7 .mainmenu-nav,
+    .edu-header.header-style-7 .mango-primary-menu,
+    .edu-header.header-style-7 .mango-primary-menu > .courses-mega {
+        position: static;
+    }
+
+    .edu-header.header-style-7 .mango-primary-menu > .courses-mega > .mango-mega-menu {
+        left: 50% !important;
+        right: auto !important;
+        top: calc(100% - 1px);
+        width: min(1080px, calc(100vw - 56px));
+        max-height: min(72vh, 720px);
+        padding: 18px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: start;
+        gap: 0;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        transform: translate(-50%, 12px);
+        border-radius: 0 0 16px 16px;
+        box-shadow: 0 18px 45px rgba(18, 32, 55, 0.16);
+    }
+
+    .edu-header.header-style-7 .mango-primary-menu > .courses-mega:hover > .mango-mega-menu {
+        transform: translate(-50%, 0);
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group {
+        min-width: 0;
+        padding: 12px 16px 14px;
+        border-right: 1px solid rgba(20, 32, 51, 0.08);
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group:nth-child(3n) {
+        border-right: 0;
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group > a {
+        display: block;
+        padding: 0 0 8px !important;
+        margin-bottom: 5px;
+        color: var(--color-heading);
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.35;
+        border-bottom: 1px solid rgba(20, 32, 51, 0.08);
+        white-space: normal;
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group > a::after {
+        display: none !important;
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group > .submenu {
+        position: static !important;
+        inset: auto !important;
+        width: auto !important;
+        min-width: 0 !important;
+        max-height: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+        overflow: visible !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        box-shadow: none !important;
+        border: 0 !important;
+        background: transparent !important;
+        pointer-events: auto !important;
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group > .submenu > li {
+        margin: 0;
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group > .submenu > li > a {
+        display: block;
+        padding: 5px 0 !important;
+        color: var(--color-body);
+        font-size: 13px;
+        line-height: 1.35;
+        white-space: normal;
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group > .submenu > li > a:hover {
+        color: var(--color-primary);
+        padding-left: 4px !important;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+    .edu-header.header-style-7 .header-mainmenu {
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo {
+        margin-right: 14px;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo a img {
+        max-width: 168px;
+        max-height: 46px;
+    }
+
+    .edu-header.header-style-7 .mainmenu-nav .mainmenu > li > a {
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: 13px;
+    }
+
+    .edu-header.header-style-7 .header-action .header-btn .edu-btn {
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .edu-header.header-style-7 .header-mainmenu {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo {
+        margin-right: 10px;
+    }
+
+    .edu-header.header-style-7 .header-brand .logo a img {
+        max-width: 150px;
+        max-height: 42px;
+    }
+
+    .edu-header.header-style-7 .mainmenu-nav .mainmenu > li > a {
+        padding-left: 6px;
+        padding-right: 6px;
+        font-size: 12.5px;
+    }
+
+    .edu-header.header-style-7 .header-action .header-btn {
+        display: none;
+    }
+
+    .edu-header.header-style-7 .mango-primary-menu > .courses-mega > .mango-mega-menu {
+        width: min(980px, calc(100vw - 36px));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .edu-header.header-style-7 .mango-primary-menu > .courses-mega > .mango-mega-menu {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        width: min(1240px, calc(100vw - 96px));
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group:nth-child(3n) {
+        border-right: 1px solid rgba(20, 32, 51, 0.08);
+    }
+
+    .edu-header.header-style-7 .mango-mega-menu > .mega-group:nth-child(4n) {
+        border-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .popup-mobile-menu .inner {
+        width: min(420px, 100vw);
+    }
+
+    .popup-mobile-menu .mango-mobile-menu {
+        padding-top: 8px;
+    }
+
+    .popup-mobile-menu .mango-mobile-menu > li {
+        border-bottom: 1px solid rgba(20, 32, 51, 0.08);
+    }
+
+    .popup-mobile-menu .mango-mobile-menu > li > a {
+        min-height: 48px;
+        padding: 12px 0;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.35;
+    }
+
+    .popup-mobile-menu .mango-mobile-menu .submenu {
+        padding-left: 14px;
+        margin-left: 0;
+        border-left: 1px solid rgba(20, 32, 51, 0.08);
+    }
+
+    .popup-mobile-menu .mango-mobile-menu .submenu > li > a {
+        min-height: 42px;
+        padding: 9px 4px 9px 0;
+        line-height: 1.35;
+    }
+
+    .popup-mobile-menu .mango-mobile-menu .mango-mega-menu > .mega-group > a {
+        font-weight: 650;
+    }
+
+    .popup-mobile-menu .mango-mobile-menu .mango-mega-menu .submenu {
+        margin-left: 8px;
+        padding-left: 12px;
+    }
+
+    .popup-mobile-menu .mango-mobile-menu .mango-mega-menu .submenu a {
+        font-size: 14px;
+    }
+
+    .popup-mobile-menu .mango-mobile-call {
+        padding: 0 18px 28px;
+    }
+
+    .popup-mobile-menu .mango-mobile-call .edu-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .popup-mobile-menu .inner {
+        width: 100vw;
+    }
+
+    .popup-mobile-menu .mango-mobile-menu {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .popup-mobile-menu .mango-mobile-menu > li > a {
+        font-size: 15px;
+    }
+}
