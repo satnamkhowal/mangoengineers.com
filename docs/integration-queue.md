@@ -38,3 +38,10 @@ Dependency: IQ-003 approved canonical URL set.
 - B004 course integration — main commit `c781c68dd2cd5d2a97cf7ecc3d02240f1aec0e85`; duplicate PR #9 closed.
 - B005 course integration — main commit `631edf3dbfeb67861bbafaafb32068fb0a019789`; duplicate PR #14 closed.
 - Lead-form duplicate PR #13 closed after reviewed code was already integrated on main.
+
+
+### IQ-006 — Tutorial navigation and discovery integration
+Source: ME-TUTORIAL-001
+State: PENDING_REVIEW
+Shared files: includes/header.php; future sitemap.xml; contextual links from relevant course/resource pages
+Requested change: after the tutorial PR is approved/merged, change Resources > Free Tutorials from `blog-standard.html` to `/tutorial/`. Add selective contextual links from relevant course pages only after canonical/URL work is stable. Include tutorial hub/topic/chapter URLs in sitemap generation only after ME-SEO-URL-001 approves the canonical set.

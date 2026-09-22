@@ -1,0 +1,10 @@
+Options -MultiViews
+DirectoryIndex index.php
+
+RewriteEngine On
+
+# Clean tutorial URLs:
+# /tutorial/python/ -> topic.php?slug=python
+# /tutorial/python/variables-data-types/ -> chapter.php?slug=python&chapter=variables-data-types
+RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/?$ chapter.php?slug=$1&chapter=$2 [L,QSA]
+RewriteRule ^([a-z0-9-]+)/?$ topic.php?slug=$1 [L,QSA]
