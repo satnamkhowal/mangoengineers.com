@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/../includes/site-config.php';
+require_once __DIR__ . '/../includes/google-site-tools.php';
 
 function mango_tutorial_render_head(array $meta): void
 {
@@ -54,7 +55,9 @@ function mango_tutorial_render_head(array $meta): void
             '</script>';
     }
 
+    mango_google_site_tools_head();
     echo '</head><body class="sticky-header">';
+    mango_google_site_tools_body();
     echo '<div id="edublink-preloader"><div class="loading-spinner"><div class="preloader-spin-1"></div><div class="preloader-spin-2"></div></div><div class="preloader-close-btn-wraper"><span class="btn btn-primary preloader-close-btn">Cancel Preloader</span></div></div>';
     echo '<div id="main-wrapper" class="main-wrapper">';
 }
