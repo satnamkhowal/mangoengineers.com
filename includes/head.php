@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/google-site-tools.php';
+
 if (!isset($page) || !is_array($page)) {
     throw new RuntimeException('Page metadata was not initialized.');
 }
@@ -43,9 +45,11 @@ $schema = mango_page_schema($page);
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/mango-overrides.css">
 
+<?php mango_google_site_tools_head(); ?>
     <script type="application/ld+json"><?= json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP) ?></script>
 </head>
 <body class="<?= mango_e($bodyClass ?? 'sticky-header') ?>">
+<?php mango_google_site_tools_body(); ?>
     <div id="edublink-preloader">
         <div class="loading-spinner">
             <div class="preloader-spin-1"></div>
