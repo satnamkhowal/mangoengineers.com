@@ -256,3 +256,27 @@ Coordinator integration completed after PR #20 passed PHP Architecture Check.
 - Production deployment/live rendering is still not claimed because ME-DEPLOY-001 / ME-PROD-500-001 remain separate blockers.
 
 Status: B001 IMPLEMENTED + MERGED + NAVIGATION INTEGRATED in repository. Production LIVE VERIFIED: NO.
+
+## 2026-09-23 — ME-ANALYTICS-001 Google site tools foundation
+
+Branch: `ai/google-site-tools-20260923`  
+PR: #22  
+Status: REVIEW
+
+Implemented:
+- Added `includes/google-site-tools.php` as the single configuration/output layer for a verified GTM container, direct GA4 measurement ID, and Search Console HTML-tag verification token.
+- Kept all Google IDs blank by default; the branch does not activate outbound Google tracking until verified IDs are supplied.
+- Added `assets/js/google-site-tools.js` with GTM-preferred/direct-GA4 fallback loading so the same GA4 stream is not intentionally loaded twice by this integration.
+- Added privacy-safe `phone_click`, `email_click`, `whatsapp_click`, `lead_submit`, and successful `generate_lead` events.
+- Event tracking excludes submitted names, phone numbers, email addresses, messages, course selections and other form values.
+- Hooked normal PHP pages through shared `includes/head.php` and tutorial pages through `tutorial/template.php`.
+- Added `docs/GOOGLE-SITE-TOOLS.md` with activation, duplicate-tag prevention and verification steps.
+- Added IQ-007 for coordinator review of shared hooks.
+
+Verification:
+- Branch is cleanly ahead of the main commit it was created from; no existing public URL/theme rewrite was introduced.
+- PHP Architecture Check run #67 completed successfully on implementation head `075760e1c1003be7f63482a74adcc39857578c51`.
+- Production deployment and live analytics collection are not claimed.
+
+Next action:
+- Coordinator reviews PR #22. After merge, add only verified Google IDs, deploy a coherent repository snapshot, then verify Search Console ownership plus GA4 Realtime/DebugView or GTM Preview before marking analytics LIVE VERIFIED.
