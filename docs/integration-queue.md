@@ -4,6 +4,15 @@ Shared/global changes are reviewed by the master coordinator. Workers should app
 
 ## Active
 
+### IQ-007 — Google Analytics / Search Console foundation
+Source: ME-ANALYTICS-001
+State: REVIEW
+Shared scope: `includes/head.php`; `tutorial/template.php`; global tracking loader
+Goal: add a centralized, inert-by-default Google tracking foundation for GA4 or GTM, Search Console verification, and lead-intent events without duplicating tags or changing public URLs/theme markup.
+Safety: do not invent GA4/GTM/Search Console IDs; configuration remains blank until verified IDs are supplied. Track only interaction metadata (event name/form id/link type), never submitted personal data.
+Verification: PHP Architecture Check run #67 passed on implementation head `075760e1c1003be7f63482a74adcc39857578c51`.
+Next action: coordinator reviews PR #22 shared hooks; after merge, insert verified Google IDs and deploy one coherent snapshot before live verification.
+
 ### IQ-005 — Production deployment/runtime drift
 Source: ME-PROD-500-001 / ME-DEPLOY-001
 State: BLOCKED
